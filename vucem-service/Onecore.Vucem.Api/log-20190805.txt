@@ -1,0 +1,3 @@
+2019-08-05 17:21:25.169 -05:00 [Information] User profile is available. Using '"C:\Users\hmeraz\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-08-05 17:21:28.659 -05:00 [Information] Starting HeartBeat
+2019-08-05 17:24:18.004 -05:00 [Information] Instance_StatusChangedEvent RegisterAsync Succeed

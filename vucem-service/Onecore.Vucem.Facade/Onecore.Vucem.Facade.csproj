@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="8.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Onecore.Vucem.Dtos\Onecore.Vucem.Dtos.csproj" />
+    <ProjectReference Include="..\Onecore.Vucem.Entities\Onecore.Vucem.Entities.csproj" />
+    <ProjectReference Include="..\Onecore.Vucem.Services\Onecore.Vucem.Services.csproj" />
+  </ItemGroup>
+
+</Project>
