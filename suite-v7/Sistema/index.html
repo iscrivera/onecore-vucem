@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link type="image/x-icon" rel="shortcut icon" href="assets/img/favicon.png">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+	<title>QA Suite</title>
+
+
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/grid.css" rel="stylesheet">
+    <link href="assets/css/styles.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="container" style="background: url(assets/img/bg-login.jpg) no-repeat 5% top;">
+
+<div class="login-cont">
+	<div class="login-logo"><img src="assets/img/logo-onecore.png"></div>
+	<div class="login-credenciales">
+		<br>
+		<h1>Iniciar sesión</h1>
+		<br>
+		<form class="form">
+            <div class="cont-form" style="margin-bottom: 30px;">
+                <div id="title1" class="title">Usuario</div>
+                <input id="inputText1" class="form-control" type="text" onfocus="focusInput(1)" onblur="blurInput(1)" required>
+                <div id="line1" class="line">&nbsp;</div>
+                <div id="lineColor1" class="line-color">&nbsp;</div>
+            </div>
+            <div class="cont-form" style="margin-bottom: 50px;">
+                <div id="title2" class="title">Contraseña</div>
+                <input id="inputText2" class="form-control" type="password" onfocus="focusInput(2)" onblur="blurInput(2)" required>
+                <div id="line2" class="line">&nbsp;</div>
+                <div id="lineColor2" class="line-color">&nbsp;</div>
+            </div>
+
+            <center><button class="btn btn-green">Ingresar</button></center>
+        </form>
+
+        <div class="col-md-12" style="text-align: center;margin-top: 30px;">
+            <a href="assets/dashboard.html"> ¿Olvidó su contraseña?</a>
+        </div>
+	</div>
+</div>
+
+</div>
+
+
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/code.js"></script>
+
+
+</body>
+</html>

@@ -7,10 +7,10 @@
 namespace Onecore.Vucem.Test.Services
 {
     using System.Linq;
-    using Onecore.Vucem.Services.User;
+    using Onecore.Vucem.Services.Operation;
     using Onecore.Vucem.Facade.Mapping;
     using Onecore.Vucem.Entities.Context;
-    using Onecore.Vucem.DataAccess.DAO.User;
+    using Onecore.Vucem.DataAccess.DAO.Operation;
     using Microsoft.EntityFrameworkCore;
     using AutoMapper;
     using NUnit.Framework;
@@ -25,7 +25,7 @@ namespace Onecore.Vucem.Test.Services
         /// <summary>
         /// User Service Object
         /// </summary>
-        private UsersService userServices;
+        private IVucemSO130120Service userServices;
 
         /// <summary>
         /// Setup the entire test the <see cref="Init" /> class.
@@ -43,12 +43,12 @@ namespace Onecore.Vucem.Test.Services
             base.Context = new DatabaseContext(options);
 
             // Insert seed data into the database using one instance of the context
-            this.Context.CatUser.AddRange(this.GetAllUsers());
+            this.Context.CatSO130120.AddRange(this.GetAllUsers());
             this.Context.SaveChanges();
 
-            base.UsersDao = new UsersDao(this.Context);
+            base.UsersDao = new SO130120Dao(this.Context);
 
-            this.userServices = new UsersService(UsersDao);
+            this.userServices = new VucemSO130120Service(UsersDao);
         }
 
         /// <summary>
@@ -57,22 +57,10 @@ namespace Onecore.Vucem.Test.Services
         [Test]
         public async Task ValidateGetAllUsers()
         {
-            var result = await this.userServices.GetAllUsersAsync();
+            var result = await this.userServices.GetAllSO130120Async();
 
             Assert.True(result != null);
             Assert.True(result.Count() >= 0);
-        }
-
-        /// <summary>
-        /// Test Get User By Id
-        /// </summary>
-        [Test]
-        public async Task ValidateSpecificUsers()
-        {
-            var result = await this.userServices.GetUserAsync(2);
-
-            Assert.True(result != null);
-            Assert.True(result.FirstName == "Jorge");
         }
     }
 }

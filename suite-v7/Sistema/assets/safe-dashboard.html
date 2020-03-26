@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link type="image/x-icon" rel="shortcut icon" href="img/favicon.png">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+	<title>QA Suite</title>
+
+
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/grid.css" rel="stylesheet">
+	<link href="css/select2.min.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet">
+	<link href="css/datepicker.css" rel="stylesheet">
+    <link href="css/menu.css" rel="stylesheet">
+    <link href="css/acordeon3.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/progresscircle.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<nav class="navbar">
+	<div class="btn-menu"><i class="fa fa-bars"></i></div>
+	<div class="navbar-header"><img src="img/logo.jpg"></div>
+	<div class="navbar-clientes subcont"> <!--// boton de clientes -->
+		MARY KAY COSMETICS  DE MÉXICO SA DE CV <i class="fa fa-caret-down"></i>
+		<div class="submenu-clientes submenu">
+			<ul>
+			<li><a href="#">MARY KAY COSMETICS  DE MÉXICO SA DE CV</a></li>
+			<li><a href="#">MARY KAY COSMETICS  DE MÉXICO SA DE CV</a></li>
+			<li><a href="#">MARY KAY COSMETICS  DE MÉXICO SA DE CV</a></li>
+			<li><a href="#">MARY KAY COSMETICS  DE MÉXICO SA DE CV</a></li>
+			<li><a href="#">MARY KAY COSMETICS  DE MÉXICO SA DE CV</a></li>
+			<li><a href="#">MARY KAY COSMETICS  DE MÉXICO SA DE CV</a></li>
+			<li><a href="#">MARY KAY COSMETICS  DE MÉXICO SA DE CV</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="navbar-right">
+		<ul class="users-options">
+			<li><a href="#"><i id="buscar" class="fa fa-search"></i></a><!--// boton de buscar -->
+			</li>
+			<li class="subcont"><a href="#"><i class="fa fa-bell"></i></a><!--// boton de notificaciones -->
+			<div class="dropdown submenu">
+				<ul>
+				<li><a href="#">Notificación</a></li>
+				<li><a href="#">Notificación</a></li>
+				<li><a href="#">Notificación</a></li>
+				<li><a href="#">Notificación</a></li>
+				<li><a href="#">Notificación</a></li>
+				</ul>			
+			</div>
+			</li>
+			<li class="subcont"><a href="#"><i class="fa fa-user-circle-o"></i> Juan Perez</a><!--// boton de usuario -->
+			<div class="dropdown submenu">
+				<ul>
+				<li><a href="#"><i class="fa fa-cog" aria-hidden="true"></i> Cuenta</a></li>
+				<li><a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i> Cerrar sesión</a></li>
+				</ul>
+			</div>
+			</li>
+		</ul>
+	</div>
+	
+</nav>
+
+
+<!--********// Caja de busqueda -->
+
+<div id="buscar-box" class="busqueda">
+	<div class="col-13 no-padding" style="width: 80%">
+		<input type="text" name="" class="form-control" placeholder="Buscar...">
+	</div>
+	<div class="col-3 no-padding text-center" style="width: 20%"><button class="btn btn-green"><i class="fa fa-search"></i></button></div>			
+</div>
+
+
+<!--********// Menu normal -->
+
+<div class="navbar-menu">
+		<div class="btn-menu-cerrar"><i class="fa fa-times"></i></div>
+		<div class="navbar-menu-logo"><img src="img/logo.jpg"></div>
+		<div class='cssmenu'>
+			<div id="oculta-menu" class="btn-ocultarmenu"><i class="fa fa-bars"></i></div>
+			<ul>
+				<li class='has-sub open'>
+					<a href="#"><div class="icono"><img src="img/icon-menu.png"></div> SAFE</a>
+					<ul style="display: block;">
+						<li>
+						    <a href='safe-dashboard.html' class="active"><i class="fa fa-angle-right text-red"></i> Dashboard</a>
+						</li>
+						<li>
+						    <a href='safe-auditoria.html'><i class="fa fa-angle-right text-red"></i> Auditoria</a>
+						</li>
+						<li>
+						    <a href='safe-carga.html'><i class="fa fa-angle-right text-red"></i> Carga de DataStage</a>
+						</li>
+						<li class='has-sub'>
+						    <a href='#'><i class="fa fa-angle-right text-red"></i> Reportes Safe</a>
+						    <ul>
+						        <li><a href='safe-historico.html'><i class="fa fa-angle-right text-red"></i> Histórico de PreAuditorias</a></li>
+						    </ul>
+						</li>
+					</ul>
+				</li>
+				<li class='has-sub'>
+					<a href="#"><div class="icono"><img src="img/icon-menu-files.png"></div> FILES</a>
+					<ul>
+						<li>
+						    <a href='files-dashboard.html'><i class="fa fa-angle-right text-purple"></i> Dashboard</a>
+						</li>
+						<li>
+						    <a href='files-expedientes.html'><i class="fa fa-angle-right text-purple"></i> Listados de Expedientes</a>
+						</li>
+						<li class='has-sub'>
+						    <a href='#'><i class="fa fa-angle-right text-purple"></i> Reportes Files</a>
+						    <ul>
+								<li><a href='files-reportes.html'><i class="fa fa-angle-right text-purple"></i> Estatus de expedientes</a></li>
+								<li><a href='files-iva.html'><i class="fa fa-angle-right text-purple"></i> IVA detalle</a></li>
+						    </ul>
+						</li>
+					</ul>
+				</li>
+				<li class='has-sub'>
+					<a href="#"><div class="icono"><img src="img/icon-menu-vista.png"></div> VISTA</a>
+					<ul>
+						<li>
+						    <div class="buscar-cont"><input type="text" name="" class="form-control" placeholder="Buscar..."><i class="fa fa-search btn-buscar"></i></div>
+						</li>
+					</ul>
+				</li>
+				<li class='has-sub'>
+					<a href="#"><div class="icono"><img src="img/icon-menu-anexo.png"></div> ANEXO 24</a>
+					<ul>
+						<li><a href='anexo-carga.html'><i class="fa fa-angle-right text-yellow"></i> Carga de layout</a></li>
+						<li><a href='anexo-compulsas.html'><i class="fa fa-angle-right text-yellow"></i> Generar compulsas</a></li>
+					</ul>
+				</li>
+				<li class='has-sub'>
+					<a href="#"><div class="icono"><img src="img/icon-menu-seguridad.png"></div> SEGURIDAD</a>
+					<ul>
+						<li>
+						    <a href='seguridad-perfiles.html'><i class="fa fa-angle-right text-green"></i> Perfiles</a>
+						</li>
+						<li>
+						    <a href='seguridad-proveedores.html'><i class="fa fa-angle-right text-green"></i> Poveedores</a>
+						</li>
+						<li>
+						    <a href='seguridad-usuarios.html'><i class="fa fa-angle-right text-green"></i> Usuarios</a>
+						</li>
+						<li>
+						    <a href='seguridad-sellos.html'><i class="fa fa-angle-right text-green"></i> Configuración de Sellos</a>
+						</li>
+						<li>
+						    <a href='seguridad-grupos.html'><i class="fa fa-angle-right text-green"></i> Grupos de Notificaciones</a>
+						</li>
+						<li>
+						    <a href='seguridad-configuracion.html'><i class="fa fa-angle-right text-green"></i> Configurador de Notificaciones</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+
+</div>
+
+<!-- // fin de menu  -->
+
+<!--********// Menu replegado -->
+
+<div class="navbar-menu-replegado">
+
+	<div class="navbar-menu-logo"><img src="img/logo.jpg"></div>
+	<div class='cssmenu'>
+		<div id="muestra-menu" class="btn-ocultarmenu"><i class="fa fa-bars"></i></div>
+		<ul>
+			<li class="subcont">
+				<a href="#"><div class="icono"><img src="img/icon-menu.png"></div></a>	
+				<div class="submenu-menu submenu">
+					<div class="title bg-red">SAFE</div>
+					<div class='cssmenu'>
+					<ul class="sub" style="display: block;">
+						<li>
+							<a href='safe-dashboard.html'><i class="fa fa-angle-right text-red"></i> Dashboard</a>
+						</li>
+						<li>
+							<a href='safe-auditoria.html'><i class="fa fa-angle-right text-red"></i> Auditoria</a>
+						</li>
+						<li>
+							<a href='safe-carga.html'><i class="fa fa-angle-right text-red"></i> Carga de DataStage</a>
+						</li>
+						<li class='has-sub open'>
+							<a href='#'><i class="fa fa-angle-right text-red"></i> Reportes Safe</a>
+							<ul>
+								<li><a href='safe-historico.html' class="active"><i class="fa fa-angle-right text-red"></i> Histórico de PreAuditorias</a></li>
+							</ul>
+						</li>
+					</ul>
+					</div>
+				</div>			
+			</li>
+			<li class='subcont'>
+				<a href="#"><div class="icono"><img src="img/icon-menu-files.png"></div></a>	
+
+				<div class="submenu-menu submenu">
+					<div class="title bg-purple">FILES</div>
+					<div class='cssmenu'>
+					<ul>
+						<li>
+							<a href='files-dashboard.html'><i class="fa fa-angle-right text-purple"></i> Dashboard</a>
+						</li>
+						<li>
+							<a href='files-expedientes.html' class="active"><i class="fa fa-angle-right text-purple"></i> Listados de Expedientes</a>
+						</li>
+						<li class='has-sub'>
+							<a href='#'><i class="fa fa-angle-right text-purple"></i> Reportes Files</a>
+							<ul>
+								<li><a href='files-reportes.html'><i class="fa fa-angle-right text-purple"></i> Estatus de expedientes</a></li>
+								<li><a href='files-iva.html'><i class="fa fa-angle-right text-purple"></i> IVA detalle</a></li>
+							</ul>
+						</li>
+					</ul>
+					</div>
+				</div>				
+			</li>
+			<li class="subcont">
+				<a href="#"><div class="icono"><img src="img/icon-menu-vista.png"></div></a>
+
+				<div class="submenu-menu submenu">
+					<div class="title bg-blue">VISTA</div>
+					<div class='cssmenu'>
+					<ul class="sub" style="display: block;">
+						<li>
+							<div class="buscar-cont"><input type="text" name="" class="form-control" placeholder="Buscar..."><i class="fa fa-search btn-buscar"></i></div>
+						</li>
+					</ul>
+					</div>
+				</div>					
+			</li>
+			<li class="subcont">
+				<a href="#"><div class="icono"><img src="img/icon-menu-anexo.png"></div></a>	
+				<div class="submenu-menu submenu">
+					<div class="title bg-yellow">ANEXO 24</div>
+					<div class='cssmenu'>
+					<ul class="sub" style="display: block;">
+						<li><a href='anexo-carga.html'><i class="fa fa-angle-right text-yellow"></i> Carga de layout</a></li>
+						<li><a href='anexo-compulsas.html'><i class="fa fa-angle-right text-yellow"></i> Generar compulsas</a></li>
+					</ul>
+					</div>
+				</div>				
+			</li>
+			<li class="subcont">
+				<a href="#"><div class="icono"><img src="img/icon-menu-seguridad.png"></div></a>	
+				<div class="submenu-menu submenu">
+					<div class="title bg-green">SEGURIDAD</div>
+					<div class='cssmenu'>
+					<ul class="sub" style="display: block;">
+						<li>
+							<a href='seguridad-perfiles.html'><i class="fa fa-angle-right text-green"></i> Perfiles</a>
+						</li>
+						<li>
+							<a href='seguridad-proveedores.html'><i class="fa fa-angle-right text-green"></i> Poveedores</a>
+						</li>
+						<li>
+							<a href='seguridad-usuarios.html'><i class="fa fa-angle-right text-green"></i> Usuarios</a>
+						</li>
+						<li>
+							<a href='seguridad-sellos.html'><i class="fa fa-angle-right text-green"></i> Configuración de Sellos</a>
+						</li>
+						<li>
+							<a href='seguridad-grupos.html'><i class="fa fa-angle-right text-green"></i> Grupos de Notificaciones</a>
+						</li>
+						<li>
+							<a href='seguridad-configuracion.html'><i class="fa fa-angle-right text-green"></i> Configurador de Notificaciones</a>
+						</li>
+					</ul>
+					</div>
+				</div>				
+			</li>
+		</ul>
+	</div>
+
+
+</div>
+
+<!-- // fin de menu replegado -->
+
+<div class="wrapper">
+	
+	<div class="col-16 wrapper-head">
+	<h1><img src="img/icon-head-safe.png"> SAFE <span class="text-red">/ Dashboard</span></h1>
+	</div>
+
+	<div class="menujq">
+        <ul>
+            <li>
+            	<a href="javascript:void();">
+            		<span class="year">2018</span><span class="inf">Total Cargados: 1</span><span class="inf">50 pedimentos</span><span class="inf"><i class="fa fa-exclamation-circle"></i> <div class="bar-cont"><div class="progressbar"></div></div> 8%</span>
+            	</a>
+                <ul>
+                <li>
+
+                <div class="col-16 text-center">
+                	<span onclick="verMeses(118)" class="meses active"><i class="fa fa-check-circle"></i> Enero</span>
+                	<span class="meses boxtool"><i class="fa fa-exclamation-circle"></i> Febrero<div class="tooltip">Pendiente</div></span>
+                	<span class="meses boxtool"><i class="fa fa-exclamation-circle"></i> Marzo<div class="tooltip">Pendiente</div></span>
+                	<span class="meses boxtool"><i class="fa fa-exclamation-circle"></i> Abril<div class="tooltip">Pendiente</div></span>
+                	<span class="meses boxtool"><i class="fa fa-exclamation-circle"></i> Mayo<div class="tooltip">Pendiente</div></span>
+                	<span class="meses boxtool"><i class="fa fa-exclamation-circle"></i> Junio<div class="tooltip">Pendiente</div></span>
+                	<span class="meses boxtool"><i class="fa fa-exclamation-circle"></i> Julio<div class="tooltip">Pendiente</div></span>
+                	<span class="meses boxtool"><i class="fa fa-exclamation-circle"></i> Agosto<div class="tooltip">Pendiente</div></span>
+                	<span class="meses boxtool"><i class="fa fa-exclamation-circle"></i> Septiembre<div class="tooltip">Pendiente</div></span>
+                	<span class="meses boxtool"><i class="fa fa-exclamation-circle"></i> Octubre<div class="tooltip">Pendiente</div></span>
+                	<span class="meses boxtool"><i class="fa fa-exclamation-circle"></i> Noviembre<div class="tooltip">Pendiente</div></span>
+                	<span class="meses boxtool"><i class="fa fa-exclamation-circle"></i> Diciembre<div class="tooltip">Pendiente</div></span>
+                </div>
+
+				<div class="tabla-cont">
+
+                <div id="tabla-118" class="col-16 tablas" style="display: block;">
+                	<div class="col-16" style="padding: 0;">
+                		<div class="col-4"><button class="btn btn-green"><i class="fa fa-file-excel-o"></i> Excel</button></div>
+                		<div class="col-4"><div class="aviso-safe text-correctas">Correctos: 100%</div></div>
+                		<div class="col-4"><div class="aviso-safe text-hallazgos">Con hallazgos: 0</div></div>
+                		<div class="col-4"><input type="text" class="form-control" placeholder="Buscar..."><i class="fa fa-search icon-buscar"></i></div>
+                	</div>
+
+                	<div class="col-16">
+                	<div class="table-responsive">
+				        <table class="tablesorter table table-striped table-bordered table-hover" cellspacing="0">
+				            <thead>
+				                <tr>
+				                    <th>Referencia</th>
+				                    <th>Patente</th>
+				                    <th>Aduana</th>
+				                    <th>Pedimento</th>
+				                    <th>claveDOC</th>
+				                    <th>Operación</th>
+				                    <th>RFCImportación</th>
+				                    <th>Nombre_Datastage</th>
+				                </tr>
+				            </thead>
+				            <tbody id="numbers">
+				                <tr>
+				                    <td>16252407004473</td>
+				                    <td>240</td>
+				                    <td>1660</td>
+				                    <td>7001796</td>
+				                    <td>A1</td>
+				                    <td>1</td>
+				                    <td>TNE700618RC7</td>
+				                    <td>406006_501</td>
+				                </tr>
+				                <tr>
+				                    <td>16252407004473</td>
+				                    <td>240</td>
+				                    <td>1660</td>
+				                    <td>7001796</td>
+				                    <td>A1</td>
+				                    <td>1</td>
+				                    <td>TNE700618RC7</td>
+				                    <td>406006_501</td>
+				                </tr>
+				                <tr>
+				                    <td>16252407004473</td>
+				                    <td>240</td>
+				                    <td>1660</td>
+				                    <td>7001796</td>
+				                    <td>A1</td>
+				                    <td>1</td>
+				                    <td>TNE700618RC7</td>
+				                    <td>406006_501</td>
+				                </tr>
+				                <tr>
+				                    <td>16252407004473</td>
+				                    <td>240</td>
+				                    <td>1660</td>
+				                    <td>7001796</td>
+				                    <td>A1</td>
+				                    <td>1</td>
+				                    <td>TNE700618RC7</td>
+				                    <td>406006_501</td>
+				                </tr>
+				                <tr>
+				                    <td>16252407004473</td>
+				                    <td>240</td>
+				                    <td>1660</td>
+				                    <td>7001796</td>
+				                    <td>A1</td>
+				                    <td>1</td>
+				                    <td>TNE700618RC7</td>
+				                    <td>406006_501</td>
+				                </tr>
+				            </tbody>
+				        </table>
+				    Mostrando registros del 1 al 5 de un total de 99 registros
+				    </div> 
+
+					<ol class="paginacion">
+						<li>Anterior</li>
+						<li>1</li>
+						<li>...</li>
+						<li>5</li>
+						<li>Siguiente</li>
+					</ol>
+
+					</div>
+
+                </div>
+
+            	</div>
+
+                </li>
+                </ul>
+            </li>
+            <li>
+            	<a href="javascript:void();">
+            		<span class="year">2017</span><span class="inf">Total Cargados: 9</span><span class="inf">859 pedimentos</span><span class="inf"><i class="fa fa-check-circle"></i> <div class="bar-cont"><div class="progressbar" style="width: 100%;background-color: #3bd086;"></div></div> 100%</span>
+            	</a>
+                <ul>
+                <li>
+
+                <div class="col-16 text-center">
+                	<span id="mes-117" onclick="verMeses(117)" class="meses active"><i class="fa fa-check-circle"></i> Enero</span>
+                	<span id="mes-217" onclick="verMeses(217)" class="meses"><i class="fa fa-check-circle"></i> Febrero</span>
+                	<span id="mes-317" onclick="verMeses(317)" class="meses"><i class="fa fa-check-circle"></i> Marzo</span>
+                	<span id="mes-417" onclick="verMeses(417)" class="meses"><i class="fa fa-check-circle"></i> Abril</span>
+                	<span id="mes-517" onclick="verMeses(517)" class="meses"><i class="fa fa-check-circle"></i> Mayo</span>
+                	<span id="mes-617" onclick="verMeses(617)" class="meses"><i class="fa fa-check-circle"></i> Junio</span>
+                	<span id="mes-717" onclick="verMeses(717)" class="meses"><i class="fa fa-check-circle"></i> Julio</span>
+                	<span id="mes-817" onclick="verMeses(817)" class="meses"><i class="fa fa-check-circle"></i> Agosto</span>
+                	<span id="mes-917" onclick="verMeses(917)" class="meses"><i class="fa fa-check-circle"></i> Septiembre</span>
+                	<span id="mes-1017" onclick="verMeses(1017)" class="meses"><i class="fa fa-check-circle"></i> Octubre</span>
+                	<span id="mes-1117" onclick="verMeses(1117)" class="meses"><i class="fa fa-check-circle"></i> Noviembre</span>
+                	<span id="mes-1217" onclick="verMeses(1217)" class="meses"><i class="fa fa-check-circle"></i> Diciembre</span>
+                </div>
+
+				<div class="tabla-cont">
+
+                <div id="tabla-117" class="col-16 tablas" style="display: block;">
+                	<div class="col-16" style="padding: 0;">
+                		<div class="col-4"><button class="btn btn-green"><i class="fa fa-file-excel-o"></i> Excel</button></div>
+                		<div class="col-4"><div class="aviso-safe text-correctas">Correctos: 30%</div></div>
+                		<div class="col-4"><div class="aviso-safe text-hallazgos">Con hallazgos: 70%</div></div>
+                		<div class="col-4"><input type="text" class="form-control" placeholder="Buscar..."><i class="fa fa-search icon-buscar"></i></div>
+                	</div>
+
+                	<div class="col-16">
+                	<div class="table-responsive">
+				        <table class="tablesorter table table-striped table-bordered table-hover" cellspacing="0">
+				            <thead>
+				                <tr>
+				                    <th>Referencia</th>
+				                    <th>Patente</th>
+				                    <th>Aduana</th>
+				                    <th>Pedimento</th>
+				                    <th>claveDOC</th>
+				                    <th>Operación</th>
+				                    <th>RFCImportación</th>
+				                    <th>Nombre_Datastage</th>
+				                </tr>
+				            </thead>
+				            <tbody id="numbers">
+				                <tr>
+				                    <td>16252407004473</td>
+				                    <td>240</td>
+				                    <td>1660</td>
+				                    <td>7001796</td>
+				                    <td>A1</td>
+				                    <td>1</td>
+				                    <td>TNE700618RC7</td>
+				                    <td>406006_501</td>
+				                </tr>
+				                <tr>
+				                    <td>16252407004473</td>
+				                    <td>240</td>
+				                    <td>1660</td>
+				                    <td>7001796</td>
+				                    <td>A1</td>
+				                    <td>1</td>
+				                    <td>TNE700618RC7</td>
+				                    <td>406006_501</td>
+				                </tr>
+				                <tr>
+				                    <td>16252407004473</td>
+				                    <td>240</td>
+				                    <td>1660</td>
+				                    <td>7001796</td>
+				                    <td>A1</td>
+				                    <td>1</td>
+				                    <td>TNE700618RC7</td>
+				                    <td>406006_501</td>
+				                </tr>
+				                <tr>
+				                    <td>16252407004473</td>
+				                    <td>240</td>
+				                    <td>1660</td>
+				                    <td>7001796</td>
+				                    <td>A1</td>
+				                    <td>1</td>
+				                    <td>TNE700618RC7</td>
+				                    <td>406006_501</td>
+				                </tr>
+				                <tr>
+				                    <td>16252407004473</td>
+				                    <td>240</td>
+				                    <td>1660</td>
+				                    <td>7001796</td>
+				                    <td>A1</td>
+				                    <td>1</td>
+				                    <td>TNE700618RC7</td>
+				                    <td>406006_501</td>
+				                </tr>
+				            </tbody>
+				        </table>
+				    Mostrando registros del 1 al 5 de un total de 99 registros
+				    </div> 
+
+					<ol class="paginacion">
+						<li>Anterior</li>
+						<li>1</li>
+						<li>...</li>
+						<li>5</li>
+						<li>Siguiente</li>
+					</ol>
+
+					</div>
+
+                </div>
+
+                <div id="tabla-217" class="col-16 tablas">
+                	<div class="col-16" style="padding: 0;">
+                		<div class="col-4"><button class="btn btn-green"><i class="fa fa-file-excel-o"></i> Excel</button></div>
+                		<div class="col-4"><div class="aviso-safe text-correctas">Correctos: 30%</div></div>
+                		<div class="col-4"><div class="aviso-safe text-hallazgos">Con hallazgos: 70%</div></div>
+                		<div class="col-4"><input type="text" class="form-control" placeholder="Buscar..."><i class="fa fa-search icon-buscar"></i></div>
+                	</div>
+
+                	<div class="col-16">
+                	<div class="table-responsive">
+				        <table class="tablesorter table table-striped table-bordered table-hover" cellspacing="0">
+				            <thead>
+				                <tr>
+				                    <th>Referencia</th>
+				                    <th>Patente</th>
+				                    <th>Aduana</th>
+				                    <th>Pedimento</th>
+				                    <th>claveDOC</th>
+				                    <th>Operación</th>
+				                    <th>RFCImportación</th>
+				                    <th>Nombre_Datastage</th>
+				                </tr>
+				            </thead>
+				            <tbody id="numbers">
+				                <tr>
+				                    <td>16252407004473</td>
+				                    <td>240</td>
+				                    <td>1660</td>
+				                    <td>7001796</td>
+				                    <td>A1</td>
+				                    <td>1</td>
+				                    <td>TNE700618RC7</td>
+				                    <td>406006_501</td>
+				                </tr>
+				                <tr>
+				                    <td>16252407004473</td>
+				                    <td>240</td>
+				                    <td>1660</td>
+				                    <td>7001796</td>
+				                    <td>A1</td>
+				                    <td>1</td>
+				                    <td>TNE700618RC7</td>
+				                    <td>406006_501</td>
+				                </tr>
+				                <tr>
+				                    <td>16252407004473</td>
+				                    <td>240</td>
+				                    <td>1660</td>
+				                    <td>7001796</td>
+				                    <td>A1</td>
+				                    <td>1</td>
+				                    <td>TNE700618RC7</td>
+				                    <td>406006_501</td>
+				                </tr>
+				                <tr>
+				                    <td>16252407004473</td>
+				                    <td>240</td>
+				                    <td>1660</td>
+				                    <td>7001796</td>
+				                    <td>A1</td>
+				                    <td>1</td>
+				                    <td>TNE700618RC7</td>
+				                    <td>406006_501</td>
+				                </tr>
+				                <tr>
+				                    <td>16252407004473</td>
+				                    <td>240</td>
+				                    <td>1660</td>
+				                    <td>7001796</td>
+				                    <td>A1</td>
+				                    <td>1</td>
+				                    <td>TNE700618RC7</td>
+				                    <td>406006_501</td>
+				                </tr>
+				            </tbody>
+				        </table>
+				    Mostrando registros del 1 al 5 de un total de 99 registros
+				    </div> 
+
+					<ol class="paginacion">
+						<li>Anterior</li>
+						<li>1</li>
+						<li>...</li>
+						<li>5</li>
+						<li>Siguiente</li>
+					</ol>
+
+					</div>
+
+                </div>
+
+                <div id="tabla-317" class="col-16 tablas">
+                	<div class="col-16" style="padding: 0;">
+                		<div class="col-4"><button class="btn btn-green"><i class="fa fa-file-excel-o"></i> Excel</button></div>
+                		<div class="col-4"><div class="aviso-safe text-correctas">Correctos: 30%</div></div>
+                		<div class="col-4"><div class="aviso-safe text-hallazgos">Con hallazgos: 70%</div></div>
+                		<div class="col-4"><input type="text" class="form-control" placeholder="Buscar..."><i class="fa fa-search icon-buscar"></i></div>
+                	</div>
+
+                	<div class="col-16">
+                	<div class="table-responsive">
+				        <table class="tablesorter table table-striped table-bordered table-hover" cellspacing="0">
+				            <thead>
+				                <tr>
+				                    <th>Referencia</th>
+				                    <th>Patente</th>
+				                    <th>Aduana</th>
+				                    <th>Pedimento</th>
+				                    <th>claveDOC</th>
+				                    <th>Operación</th>
+				                    <th>RFCImportación</th>
+				                    <th>Nombre_Datastage</th>
+				                </tr>
+				            </thead>
+				            <tbody id="numbers">
+				                <tr>
+				                    <td>16252407004473</td>
+				                    <td>240</td>
+				                    <td>1660</td>
+				                    <td>7001796</td>
+				                    <td>A1</td>
+				                    <td>1</td>
+				                    <td>TNE700618RC7</td>
+				                    <td>406006_501</td>
+				                </tr>
+				                <tr>
+				                    <td>16252407004473</td>
+				                    <td>240</td>
+				                    <td>1660</td>
+				                    <td>7001796</td>
+				                    <td>A1</td>
+				                    <td>1</td>
+				                    <td>TNE700618RC7</td>
+				                    <td>406006_501</td>
+				                </tr>
+				                <tr>
+				                    <td>16252407004473</td>
+				                    <td>240</td>
+				                    <td>1660</td>
+				                    <td>7001796</td>
+				                    <td>A1</td>
+				                    <td>1</td>
+				                    <td>TNE700618RC7</td>
+				                    <td>406006_501</td>
+				                </tr>
+				                <tr>
+				                    <td>16252407004473</td>
+				                    <td>240</td>
+				                    <td>1660</td>
+				                    <td>7001796</td>
+				                    <td>A1</td>
+				                    <td>1</td>
+				                    <td>TNE700618RC7</td>
+				                    <td>406006_501</td>
+				                </tr>
+				                <tr>
+				                    <td>16252407004473</td>
+				                    <td>240</td>
+				                    <td>1660</td>
+				                    <td>7001796</td>
+				                    <td>A1</td>
+				                    <td>1</td>
+				                    <td>TNE700618RC7</td>
+				                    <td>406006_501</td>
+				                </tr>
+				            </tbody>
+				        </table>
+				    Mostrando registros del 1 al 5 de un total de 99 registros
+				    </div> 
+
+					<ol class="paginacion">
+						<li>Anterior</li>
+						<li>1</li>
+						<li>...</li>
+						<li>5</li>
+						<li>Siguiente</li>
+					</ol>
+
+					</div>
+
+                </div>
+
+            	</div>
+
+                </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div id="demo" class="col-16">
+		<div class="col-5 text-center">
+			<h2 style="color: #65b1e7;">Documentos despacho</h2>
+		 	
+            <div class="circlechart subcont" data-percentage="80">
+            	<span>1030<br><span>Documentos<br>no cargados</span></span>
+            </div>
+
+            <p><span style="color: #65b1e7;">254</span> de 275 Pedimentos</p>
+        </div>
+		<div class="col-5 text-center">
+			<h2 style="color: #65b1e7;">Documentos despacho</h2>
+		 	
+            <div class="circlechart subcont" data-percentage="80">
+            	<span>1030<br><span>Documentos<br>no cargados</span></span>
+            </div>
+            
+            <p><span style="color: #65b1e7;">254</span> de 275 Pedimentos</p>
+        </div>
+		<div class="col-5 text-center">
+			<h2 style="color: #65b1e7;">Documentos despacho</h2>
+		 	
+            <div class="circlechart subcont" data-percentage="80">
+            	<span>1030<br><span>Documentos<br>no cargados</span></span>
+            </div>
+            
+            <p><span style="color: #65b1e7;">254</span> de 275 Pedimentos</p>
+        </div>
+	</div>
+
+
+</div>
+
+</div>
+
+
+
+<!--********// Overlay mas claro, sale con menu lateral y busqueda -->
+<div id="overlay-trans" class="overlay2"></div>
+
+
+<!--********// Overlay mas obscuro, sle con los popup -->
+<div id="overlay" class="overlay"></div>
+
+	
+<!--********// Popup para agregar documento -->
+	<div id="popup-documento" class="popup">
+		<div class="title bg-gray">Cargar documento <div id="close-documento" class="close"><i class="fa fa-times"></i></div></div>
+		
+		<div class="col-1"></div>
+		<div class="col-14">
+			<select class="js-example-basic-single form-control" style="width: 100%">
+				<option value="1">Tipo de Archivo</option>
+				<option value="2">COVER pdf</option>
+				<option value="3">3</option>
+			</select>
+
+			<div class="caja-cargar text-center">
+				<i class="fa fa-cloud-upload"></i>
+				<p>Arrastra aquí los archivos que desees agregar o da click al botón de agregar.</p>
+				<button class="btn btn-gray-light">Examinar</button>
+			</div>
+		</div>
+		<div class="col-1"></div>
+
+		<div class="col-16 text-center">
+			<button class="btn btn-green">Aceptar</button>
+			<button class="btn btn-gray open-alerta">Cancelar</button>
+		</div>
+	</div>
+
+
+<!--********// Popup para agregar archivos -->
+	<div id="popup-archivo" class="popup">
+		<div class="title bg-gray">Cargar archivo <div id="close-archivo" class="close"><i class="fa fa-times"></i></div></div>
+		
+		<div class="col-1"></div>
+		<div class="col-14">
+
+			<div class="caja-cargar text-center">
+				<i class="fa fa-cloud-upload"></i>
+				<p>Arrastra aquí los archivos que desees agregar o da click al botón de agregar.</p>
+				<button class="btn btn-gray-light">Examinar</button>
+			</div>
+		</div>
+		<div class="col-1"></div>
+
+		<div class="col-16 text-center">
+			<button class="btn btn-green">Aceptar</button>
+			<button class="btn btn-gray open-alerta">Cancelar</button>
+		</div>
+	</div>
+
+
+<!--********// Popup para alertas -->
+	<div id="popup-alerta" class="popup popup-alerta">
+		<div class="title bg-alert">Ocurrió un error <div class="close close-alerta"><i class="fa fa-times"></i></div></div>
+		
+		<div class="col-1"></div>
+		<div class="col-14 text-center">
+
+			<i class="fa fa-exclamation-circle icon"></i>
+			<p id="alert-aviso1"></p>
+			<p id="alert-aviso2" class="text-red"></p>
+			
+		</div>
+		<div class="col-1"></div>
+
+		<div class="col-16 text-center">
+			<button class="btn btn-alert close-alerta">Aceptar</button>
+		</div>
+	</div>
+
+<!--********// Popup para eliminar -->
+	<div id="popup-eliminar" class="popup popup-eliminar">
+		<div class="title bg-orange">Aviso <div class="close close-eliminar bg-orange"><i class="fa fa-times"></i></div></div>
+		
+		<div class="col-1"></div>
+		<div class="col-14 text-center">
+
+			<i class="fa fa-exclamation-circle icon"></i>
+			<p>¿Desea eliminar el archivo?</p>
+			
+		</div>
+		<div class="col-1"></div>
+
+		<div class="col-16 text-center">
+			<button class="btn btn-orange archivo-eliminado">Aceptar</button>
+			<button class="btn btn-gray close-eliminar">Cancelar</button>
+		</div>
+	</div>
+
+<!--********// Popup para confirmación -->
+	<div id="popup-confirmacion" class="popup popup-confirmacion">
+		<div class="title bg-ok">Aviso</div>
+		
+		<div class="col-1"></div>
+		<div class="col-14 text-center">
+
+			<i class="fa fa-check-circle-o icon"></i>
+			<p id="ok-text1" class="text-ok"></p>
+			
+		</div>
+		<div class="col-1"></div>
+
+	</div>
+
+
+
+
+
+<script src="js/jquery.min.js"></script>
+<script src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="js/code.js"></script>
+<script src="js/menu.js"></script>
+
+<script src="js/jquery.tablesorter.min.js"></script>
+
+<script src="js/select2.min.js"></script>
+<script type="text/javascript" src="js/datepicker.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() { 
+	    // call the tablesorter plugin 
+	    $("table").tablesorter({ 
+	        // sort on the first column and third column, order asc 
+	        sortList: [[0,0],[2,0]] 
+	    }); 
+		});
+	</script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('.js-example-basic-single').select2();
+		});
+	</script>
+
+	<script src="js/datepicker.js"></script>
+  <script>
+    $(function() {
+      $('[data-toggle="datepicker"]').datepicker({
+        autoHide: true,
+        zIndex: 2048,
+      });
+    });
+  </script>
+
+  <script src="js/progresscircle.js"></script>
+
+	<script>
+		$('.circlechart').circlechart(); // Initialization
+	</script>
+
+
+</body>
+</html>

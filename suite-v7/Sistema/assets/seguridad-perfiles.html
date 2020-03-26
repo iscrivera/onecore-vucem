@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link type="image/x-icon" rel="shortcut icon" href="img/favicon.png">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+	<title>QA Suite</title>
+
+
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/grid.css" rel="stylesheet">
+	<link href="css/select2.min.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet">
+	<link href="css/datepicker.css" rel="stylesheet">
+    <link href="css/menu.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/tabs.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<nav class="navbar">
+	<div class="btn-menu"><i class="fa fa-bars"></i></div>
+	<div class="navbar-header"><img src="img/logo.jpg"></div>
+	<div class="navbar-clientes subcont"> <!--// boton de clientes -->
+		MARY KAY COSMETICS  DE MÉXICO SA DE CV <i class="fa fa-caret-down"></i>
+		<div class="submenu-clientes submenu">
+			<ul>
+			<li><a href="#">MARY KAY COSMETICS  DE MÉXICO SA DE CV</a></li>
+			<li><a href="#">MARY KAY COSMETICS  DE MÉXICO SA DE CV</a></li>
+			<li><a href="#">MARY KAY COSMETICS  DE MÉXICO SA DE CV</a></li>
+			<li><a href="#">MARY KAY COSMETICS  DE MÉXICO SA DE CV</a></li>
+			<li><a href="#">MARY KAY COSMETICS  DE MÉXICO SA DE CV</a></li>
+			<li><a href="#">MARY KAY COSMETICS  DE MÉXICO SA DE CV</a></li>
+			<li><a href="#">MARY KAY COSMETICS  DE MÉXICO SA DE CV</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="navbar-right">
+		<ul class="users-options">
+			<li><a href="#"><i id="buscar" class="fa fa-search"></i></a><!--// boton de buscar -->
+			</li>
+			<li class="subcont"><a href="#"><i class="fa fa-bell"></i></a><!--// boton de notificaciones -->
+			<div class="dropdown submenu">
+				<ul>
+				<li><a href="#">Notificación</a></li>
+				<li><a href="#">Notificación</a></li>
+				<li><a href="#">Notificación</a></li>
+				<li><a href="#">Notificación</a></li>
+				<li><a href="#">Notificación</a></li>
+				</ul>			
+			</div>
+			</li>
+			<li class="subcont"><a href="#"><i class="fa fa-user-circle-o"></i> Juan Perez</a><!--// boton de usuario -->
+			<div class="dropdown submenu">
+				<ul>
+				<li><a href="#"><i class="fa fa-cog" aria-hidden="true"></i> Cuenta</a></li>
+				<li><a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i> Cerrar sesión</a></li>
+				</ul>
+			</div>
+			</li>
+		</ul>
+	</div>
+	
+</nav>
+
+
+<!--********// Caja de busqueda -->
+
+<div id="buscar-box" class="busqueda">
+	<div class="col-13 no-padding" style="width: 80%">
+		<input type="text" name="" class="form-control" placeholder="Buscar...">
+	</div>
+	<div class="col-3 no-padding text-center" style="width: 20%"><button class="btn btn-green"><i class="fa fa-search"></i></button></div>			
+</div>
+
+
+<!--********// Menu normal -->
+
+<div class="navbar-menu">
+		<div class="btn-menu-cerrar"><i class="fa fa-times"></i></div>
+		<div class="navbar-menu-logo"><img src="img/logo.jpg"></div>
+		<div class='cssmenu'>
+			<div id="oculta-menu" class="btn-ocultarmenu"><i class="fa fa-bars"></i></div>
+			<ul>
+				<li class='has-sub'>
+					<a href="#"><div class="icono"><img src="img/icon-menu.png"></div> SAFE</a>
+					<ul>
+						<li>
+						    <a href='safe-dashboard.html'><i class="fa fa-angle-right text-red"></i> Dashboard</a>
+						</li>
+						<li>
+						    <a href='safe-auditoria.html'><i class="fa fa-angle-right text-red"></i> Auditoria</a>
+						</li>
+						<li>
+						    <a href='safe-carga.html'><i class="fa fa-angle-right text-red"></i> Carga de DataStage</a>
+						</li>
+						<li class='has-sub'>
+						    <a href='#'><i class="fa fa-angle-right text-red"></i> Reportes Safe</a>
+						    <ul>
+						        <li><a href='safe-historico.html'><i class="fa fa-angle-right text-red"></i> Histórico de PreAuditorias</a></li>
+						    </ul>
+						</li>
+					</ul>
+				</li>
+				<li class='has-sub'>
+					<a href="#"><div class="icono"><img src="img/icon-menu-files.png"></div> FILES</a>
+					<ul>
+						<li>
+						    <a href='files-dashboard.html'><i class="fa fa-angle-right text-purple"></i> Dashboard</a>
+						</li>
+						<li>
+						    <a href='files-expedientes.html'><i class="fa fa-angle-right text-purple"></i> Listados de Expedientes</a>
+						</li>
+						<li class='has-sub'>
+						    <a href='#'><i class="fa fa-angle-right text-purple"></i> Reportes Files</a>
+						    <ul>
+								<li><a href='files-reportes.html'><i class="fa fa-angle-right text-purple"></i> Estatus de expedientes</a></li>
+								<li><a href='files-iva.html'><i class="fa fa-angle-right text-purple"></i> IVA detalle</a></li>
+						    </ul>
+						</li>
+					</ul>
+				</li>
+				<li class='has-sub'>
+					<a href="#"><div class="icono"><img src="img/icon-menu-vista.png"></div> VISTA</a>
+					<ul>
+						<li>
+						    <div class="buscar-cont"><input type="text" name="" class="form-control" placeholder="Buscar..."><i class="fa fa-search btn-buscar"></i></div>
+						</li>
+					</ul>
+				</li>
+				<li class='has-sub'>
+					<a href="#"><div class="icono"><img src="img/icon-menu-anexo.png"></div> ANEXO 24</a>
+					<ul>
+						<li><a href='anexo-carga.html'><i class="fa fa-angle-right text-yellow"></i> Carga de layout</a></li>
+						<li><a href='anexo-compulsas.html'><i class="fa fa-angle-right text-yellow"></i> Generar compulsas</a></li>
+					</ul>
+				</li>
+				<li class='has-sub open'>
+					<a href="#"><div class="icono"><img src="img/icon-menu-seguridad.png"></div> SEGURIDAD</a>
+					<ul style="display: block;">
+						<li>
+						    <a href='seguridad-perfiles.html' class="active"><i class="fa fa-angle-right text-green"></i> Perfiles</a>
+						</li>
+						<li>
+						    <a href='seguridad-proveedores.html'><i class="fa fa-angle-right text-green"></i> Poveedores</a>
+						</li>
+						<li>
+						    <a href='seguridad-usuarios.html'><i class="fa fa-angle-right text-green"></i> Usuarios</a>
+						</li>
+						<li>
+						    <a href='seguridad-sellos.html'><i class="fa fa-angle-right text-green"></i> Configuración de Sellos</a>
+						</li>
+						<li>
+						    <a href='seguridad-grupos.html'><i class="fa fa-angle-right text-green"></i> Grupos de Notificaciones</a>
+						</li>
+						<li>
+						    <a href='seguridad-configuracion.html'><i class="fa fa-angle-right text-green"></i> Configurador de Notificaciones</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+
+</div>
+
+<!-- // fin de menu  -->
+
+<!--********// Menu replegado -->
+
+<div class="navbar-menu-replegado">
+
+	<div class="navbar-menu-logo"><img src="img/logo.jpg"></div>
+	<div class='cssmenu'>
+		<div id="muestra-menu" class="btn-ocultarmenu"><i class="fa fa-bars"></i></div>
+		<ul>
+			<li class="subcont">
+				<a href="#"><div class="icono"><img src="img/icon-menu.png"></div></a>	
+				<div class="submenu-menu submenu">
+					<div class="title bg-red">SAFE</div>
+					<div class='cssmenu'>
+					<ul class="sub" style="display: block;">
+						<li>
+							<a href='safe-dashboard.html'><i class="fa fa-angle-right text-red"></i> Dashboard</a>
+						</li>
+						<li>
+							<a href='safe-auditoria.html'><i class="fa fa-angle-right text-red"></i> Auditoria</a>
+						</li>
+						<li>
+							<a href='safe-carga.html'><i class="fa fa-angle-right text-red"></i> Carga de DataStage</a>
+						</li>
+						<li class='has-sub open'>
+							<a href='#'><i class="fa fa-angle-right text-red"></i> Reportes Safe</a>
+							<ul>
+								<li><a href='safe-historico.html' class="active"><i class="fa fa-angle-right text-red"></i> Histórico de PreAuditorias</a></li>
+							</ul>
+						</li>
+					</ul>
+					</div>
+				</div>			
+			</li>
+			<li class='subcont'>
+				<a href="#"><div class="icono"><img src="img/icon-menu-files.png"></div></a>	
+
+				<div class="submenu-menu submenu">
+					<div class="title bg-purple">FILES</div>
+					<div class='cssmenu'>
+					<ul>
+						<li>
+							<a href='files-dashboard.html'><i class="fa fa-angle-right text-purple"></i> Dashboard</a>
+						</li>
+						<li>
+							<a href='files-expedientes.html' class="active"><i class="fa fa-angle-right text-purple"></i> Listados de Expedientes</a>
+						</li>
+						<li class='has-sub'>
+							<a href='#'><i class="fa fa-angle-right text-purple"></i> Reportes Files</a>
+							<ul>
+								<li><a href='files-reportes.html'><i class="fa fa-angle-right text-purple"></i> Estatus de expedientes</a></li>
+								<li><a href='files-iva.html'><i class="fa fa-angle-right text-purple"></i> IVA detalle</a></li>
+							</ul>
+						</li>
+					</ul>
+					</div>
+				</div>				
+			</li>
+			<li class="subcont">
+				<a href="#"><div class="icono"><img src="img/icon-menu-vista.png"></div></a>
+
+				<div class="submenu-menu submenu">
+					<div class="title bg-blue">VISTA</div>
+					<div class='cssmenu'>
+					<ul class="sub" style="display: block;">
+						<li>
+							<div class="buscar-cont"><input type="text" name="" class="form-control" placeholder="Buscar..."><i class="fa fa-search btn-buscar"></i></div>
+						</li>
+					</ul>
+					</div>
+				</div>					
+			</li>
+			<li class="subcont">
+				<a href="#"><div class="icono"><img src="img/icon-menu-anexo.png"></div></a>	
+				<div class="submenu-menu submenu">
+					<div class="title bg-yellow">ANEXO 24</div>
+					<div class='cssmenu'>
+					<ul class="sub" style="display: block;">
+						<li><a href='anexo-carga.html'><i class="fa fa-angle-right text-yellow"></i> Carga de layout</a></li>
+						<li><a href='anexo-compulsas.html'><i class="fa fa-angle-right text-yellow"></i> Generar compulsas</a></li>
+					</ul>
+					</div>
+				</div>				
+			</li>
+			<li class="subcont">
+				<a href="#"><div class="icono"><img src="img/icon-menu-seguridad.png"></div></a>	
+				<div class="submenu-menu submenu">
+					<div class="title bg-green">SEGURIDAD</div>
+					<div class='cssmenu'>
+					<ul class="sub" style="display: block;">
+						<li>
+							<a href='seguridad-perfiles.html' class="active"><i class="fa fa-angle-right text-green"></i> Perfiles</a>
+						</li>
+						<li>
+							<a href='seguridad-proveedores.html'><i class="fa fa-angle-right text-green"></i> Poveedores</a>
+						</li>
+						<li>
+							<a href='seguridad-usuarios.html'><i class="fa fa-angle-right text-green"></i> Usuarios</a>
+						</li>
+						<li>
+							<a href='seguridad-sellos.html'><i class="fa fa-angle-right text-green"></i> Configuración de Sellos</a>
+						</li>
+						<li>
+							<a href='seguridad-grupos.html'><i class="fa fa-angle-right text-green"></i> Grupos de Notificaciones</a>
+						</li>
+						<li>
+							<a href='seguridad-configuracion.html'><i class="fa fa-angle-right text-green"></i> Configurador de Notificaciones</a>
+						</li>
+					</ul>
+					</div>
+				</div>				
+			</li>
+		</ul>
+	</div>
+
+
+</div>
+
+<!-- // fin de menu replegado -->
+
+<div class="wrapper">
+	
+	<div class="row">
+		<div class="col-16 wrapper-head" style="padding-bottom: 0;">
+			<h1><img src="img/icon-head-seguridad.png"> SEGURIDAD <span class="text-green">/ Administración de perfiles</span></h1>
+
+			<div class="col-16" style="padding-bottom: 0;">
+				
+				<div class="col-16 text-right">
+					<button class="btn btn-green open-nuevorol"><i class="fa fa-plus"></i> Agregar nuevo rol</button>
+				</div>
+				
+			</div>
+
+		</div>
+	</div>
+
+
+<!--********// boton que oculta head -->
+	<div id="ocultahead" class="btn-ocultarhead boxtool"><i class="fa fa-chevron-up"></i><div class="tooltip">Ocultar header</div></div>
+
+	<div class="table-responsive">
+	        <table class="tablesorter table table-striped table-bordered table-hover" cellspacing="0">
+	            <thead>
+	                <tr>
+	                	<th></th>
+	                    <th>Rol</th>
+	                    <th>Descripción</th>
+	                    <th>Usuario última modificación</th>
+	                    <th>Fecha última modificación</th>
+	                </tr>
+	            </thead>
+	            <tbody id="numbers">
+	                <tr>
+	                    <td>
+	                    	<i class="fa fa-trash boxtool icon open-eliminar"><div class="tooltip">Eliminar<br>documento</div></i>
+	                    	<i class="fa fa-pencil boxtool icon open-editarrol"><div class="tooltip">Editar</div></i>
+	                    </td>
+	                    <td>Cliente_MKC870629U5A</td>
+	                    <td>Perfil Administrador de MKC870629U5A</td>
+	                    <td>sysadmin</td>
+	                    <td>5/29/2017 6:28:59 PM</td>
+	                </tr>
+	                <tr>
+	                    <td>
+	                    	<i class="fa fa-trash boxtool icon open-eliminar"><div class="tooltip">Eliminar<br>documento</div></i>
+	                    	<i class="fa fa-pencil boxtool icon open-editarrol"><div class="tooltip">Editar</div></i>
+	                    </td>
+	                    <td>Cliente_MKC870629U5A</td>
+	                    <td>Perfil Administrador de MKC870629U5A</td>
+	                    <td>sysadmin</td>
+	                    <td>5/29/2017 6:28:59 PM</td>
+	                </tr>
+	            </tbody>
+	        </table>
+	    </div> 
+
+
+</div>
+
+</div>
+
+<!--********// Menu lateral de nuevo rol -->
+
+<div id="popup-nuevorol" class="popup-lateral">
+	<div class="close cancelar-rol"><i class="fa fa-times"></i></div>
+
+	<h3 style="padding: 0 15px; margin-bottom: 0;" class="text-green">Agregar nuevo rol</h3>
+	<h1 style="padding: 0 15px;margin-top:0;">Datos generales</h1>
+
+	<div class="col-16">
+		<div class="col-8">
+			<div class="tag-text">Tipo de perfil</div>
+			<select class="js-example-basic-single form-control" style="width: 100%">
+				<option value="1"></option>
+				<option value="2">Cliente</option>
+				<option value="3">Agente aduanal</option>
+				<option value="4">Transportista</option>
+			</select>
+		</div>
+		<div class="col-8">
+			<div class="tag-text">Nombre</div>
+			<input type="text" name="" class="form-control" placeholder="">
+		</div>
+		<div class="col-8">
+			<div class="tag-text">Descripción</div>
+			<input type="text" name="" class="form-control" placeholder="">
+		</div>
+		<div class="col-8">
+			<div class="tag-text">Rol base</div>
+			<select class="js-example-basic-single form-control" style="width: 100%">
+				<option value="1"></option>
+				<option value="2">Cliente</option>
+				<option value="3">Agente aduanal</option>
+				<option value="4">Transportista</option>
+			</select>
+		</div>
+	</div>
+
+	<div class="col-16">
+	
+                <main class="o-main">
+                  <div class="o-container">
+
+                    <div class="o-section">
+                      <div id="tabs" class="c-tabs no-js">
+
+                        <div class="c-tabs-nav">
+                          <a href="#" class="c-tabs-nav__link is-active">
+                            <i><img src="img/icon-menu-tab.png"></i>
+                          </a>
+                          <a href="#" class="c-tabs-nav__link">
+                            <i><img src="img/icon-menu-files-tab.png"></i>
+                          </a>
+                          <a href="#" class="c-tabs-nav__link">
+                            <i><img src="img/icon-menu-vista-tab.png"></i>
+                          </a>
+                          <a href="#" class="c-tabs-nav__link">
+                            <i><img src="img/icon-menu-seguridad-tab.png"></i>
+                          </a>
+                          <a href="#" class="c-tabs-nav__link">
+                            <i><img src="img/icon-menu-anexo-tab.png"></i>
+                          </a>
+                          <a href="#" class="c-tabs-nav__link">
+                            <i class="fa fa-cloud-download"></i>
+                          </a>
+                          <a href="#" class="c-tabs-nav__link">
+                            <i class="fa fa-file"></i>
+                          </a>
+                          <a href="#" class="c-tabs-nav__link">
+                            <i class="fa fa-file-text-o"></i>
+                          </a>
+
+                        </div>
+
+                        <div class="c-tab is-active">
+                          <div class="c-tab__content checkbox"> 
+                          	<h1>SAFE</h1> 
+                          	<div class="instrucciones">Selecciona tus opciones del listado</div>
+                          	<div class="col-5">                          
+                             <input type="checkbox" id="1option1" /><label for="1option1">Auditoria V2</label>
+                             <input type="checkbox" id="1option2" /><label for="1option2">Carga de DataStage</label>
+                             <input type="checkbox" id="1option3" /><label for="1option3">Dashboard SAFE</label>         
+                             <input type="checkbox" id="1option4" /><label for="1option4">Reportes SAFE</label>
+                         	</div>  
+                          	<div class="col-6">  
+                             <input type="checkbox" id="1option5" /><label for="1option5">Histórico de PreAuditorias</label>
+                             <input type="checkbox" id="1option6" /><label for="1option6">#Partes</label>
+                             <input type="checkbox" id="1option7" /><label for="1option7">Catalogo de #Partes Cargados</label>
+                             <input type="checkbox" id="1option8" /><label for="1option8">Layouts de Pedimento Cargados</label>
+                         	</div>  
+                          	<div class="col-5">  
+                             <input type="checkbox" id="1option9" /><label for="1option9">Historico de #Partes</label>
+                             <input type="checkbox" id="1option10" /><label for="1option10">Juliano VS Layout</label>
+                             <input type="checkbox" id="1option11" /><label for="1option11">Catalogo VS Layout</label>
+                             <input type="checkbox" id="1option12" /><label for="1option12">Auditoria Catalogo</label>
+                         	</div>
+                          </div>
+                        </div>
+                        <div class="c-tab">
+                          <div class="c-tab__content checkbox"> 
+                          	<h1>FILES</h1> 
+                          	<div class="instrucciones">Selecciona tus opciones del listado</div>
+                          	<div class="col-5">                          
+                             <input type="checkbox" id="2option1" /><label for="2option1">Dashboard FILES</label>
+                             <input type="checkbox" id="2option2" /><label for="2option2">Reportes FILES</label>
+                             <input type="checkbox" id="2option3" /><label for="2option3">IVA Detalle</label>         
+                             <input type="checkbox" id="2option4" /><label for="2option4">IVA Total</label>
+                             <input type="checkbox" id="2option5" /><label for="2option5">Pedimento COVE</label>
+                             <input type="checkbox" id="2option6" /><label for="2option6">Pedimento Detalle</label>
+                         	</div>  
+                          	<div class="col-6">  
+                             <input type="checkbox" id="2option18" /><label for="2option18">Pedimento General</label>
+                             <input type="checkbox" id="2option7" /><label for="2option7">Pedimentos con Expedientes Completos</label>
+                             <input type="checkbox" id="2option8" /><label for="2option8">Pedimentos con Expedientes Incompletos</label>
+                             <input type="checkbox" id="2option10" /><label for="2option10">Proveedores con TaxID</label>
+                             <input type="checkbox" id="2option11" /><label for="2option11">Rectificaciones</label>
+                             <input type="checkbox" id="2option12" /><label for="2option12">Contribuciones</label>
+                         	</div> 
+                          	<div class="col-5">  
+                             <input type="checkbox" id="2option13" /><label for="2option13">DIOT</label>
+                             <input type="checkbox" id="2option14" /><label for="2option14">Documentos sin RFC de Consulta</label>
+                             <input type="checkbox" id="2option19" /><label for="2option19">Estatus de Expedientes</label>
+                             <input type="checkbox" id="2option15" /><label for="2option15">Listado de Expedientes</label>
+                             <input type="checkbox" id="2option16" /><label for="2option16">Detalle DataStage</label>
+                             <input type="checkbox" id="2option17" /><label for="2option17">Resumen de Operaciones DS</label>
+                         	</div>
+                          </div>
+                        </div>
+                        <div class="c-tab">
+                          <div class="c-tab__content checkbox"> 
+                          	<h1>VISTA</h1> 
+                          	<div class="instrucciones">Selecciona tus opciones del listado</div>
+                          	<div class="col-5">                          
+                             <input type="checkbox" id="3option1" /><label for="3option1">Buscar Cove</label>
+                         	</div>  
+                        </div>
+                   		</div>
+                        <div class="c-tab">
+                          <div class="c-tab__content checkbox"> 
+                          	<h1>SEGURIDAD</h1> 
+                          	<div class="instrucciones">Selecciona tus opciones del listado</div>
+                          	<div class="col-5">                          
+                             <input type="checkbox" id="4option1" /><label for="4option1">Usuarios</label>
+                             <input type="checkbox" id="4option2" /><label for="4option2">Proveedores</label>
+                             <input type="checkbox" id="4option3" /><label for="4option3">Configuracion de Sellos</label>
+                         	</div>  
+                          	<div class="col-5">                          
+                             <input type="checkbox" id="4option4" /><label for="4option4">Perfiles</label>
+                             <input type="checkbox" id="4option5" /><label for="4option5">Configurador de Notificaciones</label>
+                             <input type="checkbox" id="4option6" /><label for="4option6">Grupos de Notificaciones</label>
+                         	</div>  
+                        </div>
+                   		</div>
+                        <div class="c-tab">
+                          <div class="c-tab__content checkbox"> 
+                          	<h1>ANEXO 24</h1> 
+                          	<div class="instrucciones">Selecciona tus opciones del listado</div>
+                          	<div class="col-5">                          
+                             <input type="checkbox" id="5option1" /><label for="5option1">Carga de Layout</label>
+                             <input type="checkbox" id="5option2" /><label for="5option2">Generar Compulsas</label>
+                         	</div>  
+                        </div>
+                   		</div>
+                        <div class="c-tab">
+                          <div class="c-tab__content checkbox"> 
+                          	<h1>Descargas directas</h1> 
+                          	<div class="instrucciones">Selecciona tus opciones del listado</div>
+                          	<div class="col-5">                          
+                             <input type="checkbox" id="6option1" /><label for="6option1">BH</label>
+                             <input type="checkbox" id="6option2" /><label for="6option2">BM</label>
+                             <input type="checkbox" id="6option3" /><label for="6option3">Pendientes</label>
+                         	</div>  
+                          	<div class="col-5">                          
+                             <input type="checkbox" id="6option4" /><label for="6option4">Saldados</label>
+                             <input type="checkbox" id="6option5" /><label for="6option5">BH S</label>
+                             <input type="checkbox" id="6option6" /><label for="6option6">BM S</label>
+                         	</div>  
+                          	<div class="col-5">                          
+                             <input type="checkbox" id="6option7" /><label for="6option7">Dashboard</label>
+                             <input type="checkbox" id="6option8" /><label for="6option8">Reportes D. Temporalidades</label>
+                             <input type="checkbox" id="6option9" /><label for="6option9">A1</label>
+                         	</div>  
+                        </div>
+                      	</div>
+                        <div class="c-tab">
+                          <div class="c-tab__content checkbox"> 
+                          	<h1>Files-forwarding</h1> 
+                          	<div class="instrucciones">Selecciona tus opciones del listado</div>
+                          	<div class="col-5">                          
+                             <input type="checkbox" id="7option1" /><label for="7option1">Lista de Documentos</label>
+                             <input type="checkbox" id="7option2" /><label for="7option2">Reportes</label>
+                         	</div>  
+                        </div>
+                      	</div>
+                        <div class="c-tab">
+                          <div class="c-tab__content checkbox"> 
+                          	<h1>Documentos</h1> 
+                          	<div class="instrucciones">Selecciona tus opciones del listado</div>
+                          	<div class="col-5">                          
+                             <input type="checkbox" id="8option1" /><label for="8option1">COVE pdf</label>
+                             <input type="checkbox" id="8option2" /><label for="8option2">COVE xml</label>
+                             <input type="checkbox" id="8option3" /><label for="8option3">COVE acuse</label>
+                             <input type="checkbox" id="8option4" /><label for="8option4">Acuse E-document</label>
+                             <input type="checkbox" id="8option5" /><label for="8option5">Cuenta de gastos Mex</label>
+                             <input type="checkbox" id="8option6" /><label for="8option6">Cuenta de gastos Mex (Factura XML)</label>
+                             <input type="checkbox" id="8option7" /><label for="8option7">Cuenta de gastos USA</label>
+                             <input type="checkbox" id="8option8" /><label for="8option8">Factura Comercial -PDF</label>
+                             <input type="checkbox" id="8option25" /><label for="8option25">Contratos de proveedores</label>
+                             <input type="checkbox" id="8option26" /><label for="8option26">Ordenes de Compra</label>
+                         	</div>  
+                          	<div class="col-5">                          
+                             <input type="checkbox" id="8option9" /><label for="8option9">Factura Transportista PDF</label>
+                             <input type="checkbox" id="8option10" /><label for="8option10">Factura Transportista XML</label>
+                             <input type="checkbox" id="8option11" /><label for="8option11">Carta Porte</label>
+                             <input type="checkbox" id="8option12" /><label for="8option12">Guía Aerea , BL</label>
+                             <input type="checkbox" id="8option13" /><label for="8option13">Packing List</label>
+                             <input type="checkbox" id="8option14" /><label for="8option14">Series Marcas y Modelos</label>
+                             <input type="checkbox" id="8option15" /><label for="8option15">Certificado de Origen / NAFTA</label>
+                             <input type="checkbox" id="8option16" /><label for="8option16">RRNA´s,AVISO,CARTAS NOM</label>
+                             <input type="checkbox" id="8option27" /><label for="8option27">Otros</label>
+                             <input type="checkbox" id="8option28" /><label for="8option28">Arch. Validacion</label>
+                         	</div> 
+                          	<div class="col-5">                          
+                             <input type="checkbox" id="8option17" /><label for="8option17">Escritos</label>
+                             <input type="checkbox" id="8option18" /><label for="8option18">Pagos a Terceros y Comprobados</label>
+                             <input type="checkbox" id="8option19" /><label for="8option19">Comprobantes de Fletes</label>
+                             <input type="checkbox" id="8option20" /><label for="8option20">Hoja de Calculo</label>
+                             <input type="checkbox" id="8option21" /><label for="8option21">Manifestacion de valor</label>
+                             <input type="checkbox" id="8option22" /><label for="8option22">Pedimento Completo</label>
+                             <input type="checkbox" id="8option23" /><label for="8option23">Pedimento Simplificado</label>
+                             <input type="checkbox" id="8option24" /><label for="8option24">Fotos previo</label>
+                             <input type="checkbox" id="8option29" /><label for="8option29">Pedimento de Origen</label>
+                         	</div>
+                        </div>
+                      	</div>
+
+                    </div>
+
+                  </div>
+                </main>
+	</div>
+
+	<div class="col-16" style="position: fixed;bottom: 0;background-color: #fff;">
+		<button id="guardar-rol" class="btn btn-green">Guardar</button>
+		<button class="btn btn-gray cancelar-rol">Cancelar</button>
+	</div>
+
+</div>
+
+
+<!--********// Menu lateral de editar rol -->
+
+<div id="popup-editarrol" class="popup-lateral">
+	<div class="close cancelar-rol"><i class="fa fa-times"></i></div>
+
+	<h3 style="padding: 0 15px; margin-bottom: 0;" class="text-green">Editar rol</h3>
+	<h1 style="padding: 0 15px;margin-top:0;">Datos generales</h1>
+
+	<div class="col-16">
+		<div class="col-8">
+			<div class="tag-text">Tipo de perfil</div>
+			<select class="js-example-basic-single form-control" style="width: 100%">
+				<option value="2">Cliente</option>
+				<option value="3">Agente aduanal</option>
+				<option value="4">Transportista</option>
+			</select>
+		</div>
+		<div class="col-8">
+			<div class="tag-text">Nombre</div>
+			<input type="text" name="" class="form-control" placeholder="Cliente_MKC870629U5A">
+		</div>
+		<div class="col-8">
+			<div class="tag-text">Descripción</div>
+			<input type="text" name="" class="form-control" placeholder="Perfil Administrador de MKC870629U5A">
+		</div>
+		<div class="col-8">
+			<div class="tag-text">Rol base</div>
+			<select class="js-example-basic-single form-control" style="width: 100%" disabled>
+				<option value="1">Perfil Administrador de MKC870629U5A</option>
+				<option value="2">Cliente</option>
+				<option value="3">Agente aduanal</option>
+				<option value="4">Transportista</option>
+			</select>
+		</div>
+	</div>
+
+	<div class="col-16">
+	
+                <main class="o-main">
+                  <div class="o-container">
+
+                    <div class="o-section">
+                      <div id="tabs2" class="c-tabs no-js">
+
+                        <div class="c-tabs-nav">
+                          <a href="#" class="c-tabs-nav__link is-active">
+                            <i><img src="img/icon-menu-tab.png"></i>
+                          </a>
+                          <a href="#" class="c-tabs-nav__link">
+                            <i><img src="img/icon-menu-files-tab.png"></i>
+                          </a>
+                          <a href="#" class="c-tabs-nav__link">
+                            <i><img src="img/icon-menu-vista-tab.png"></i>
+                          </a>
+                          <a href="#" class="c-tabs-nav__link">
+                            <i><img src="img/icon-menu-seguridad-tab.png"></i>
+                          </a>
+                          <a href="#" class="c-tabs-nav__link">
+                            <i><img src="img/icon-menu-anexo-tab.png"></i>
+                          </a>
+                          <a href="#" class="c-tabs-nav__link">
+                            <i class="fa fa-cloud-download"></i>
+                          </a>
+                          <a href="#" class="c-tabs-nav__link">
+                            <i class="fa fa-file"></i>
+                          </a>
+                          <a href="#" class="c-tabs-nav__link">
+                            <i class="fa fa-file-text-o"></i>
+                          </a>
+
+                        </div>
+
+                        <div class="c-tab is-active">
+                          <div class="c-tab__content checkbox"> 
+                          	<h1>SAFE</h1> 
+                          	<div class="instrucciones">Selecciona tus opciones del listado</div>
+                          	<div class="col-5">                          
+                             <input type="checkbox" id="2-1option1" checked /><label for="2-1option1">Auditoria V2</label>
+                             <input type="checkbox" id="2-1option2" /><label for="2-1option2">Carga de DataStage</label>
+                             <input type="checkbox" id="2-1option3" checked/><label for="2-1option3">Dashboard SAFE</label>         
+                             <input type="checkbox" id="2-1option4" /><label for="2-1option4">Reportes SAFE</label>
+                         	</div>  
+                          	<div class="col-6">  
+                             <input type="checkbox" id="2-1option5" /><label for="2-1option5">Histórico de PreAuditorias</label>
+                             <input type="checkbox" id="2-1option6" /><label for="2-1option6">#Partes</label>
+                             <input type="checkbox" id="2-1option7" checked /><label for="2-1option7">Catalogo de #Partes Cargados</label>
+                             <input type="checkbox" id="2-1option8" /><label for="2-1option8">Layouts de Pedimento Cargados</label>
+                         	</div>  
+                          	<div class="col-5">  
+                             <input type="checkbox" id="2-1option9" /><label for="2-1option9">Historico de #Partes</label>
+                             <input type="checkbox" id="2-1option10" checked /><label for="2-1option10">Juliano VS Layout</label>
+                             <input type="checkbox" id="2-1option11" /><label for="2-1option11">Catalogo VS Layout</label>
+                             <input type="checkbox" id="2-1option12" /><label for="2-1option12">Auditoria Catalogo</label>
+                         	</div>
+                          </div>
+                        </div>
+                        <div class="c-tab">
+                          <div class="c-tab__content checkbox"> 
+                          	<h1>FILES</h1> 
+                          	<div class="instrucciones">Selecciona tus opciones del listado</div>
+                          	<div class="col-5">                          
+                             <input type="checkbox" id="2-2option1" /><label for="2-2option1">Dashboard FILES</label>
+                             <input type="checkbox" id="2-2option2" checked /><label for="2-2option2">Reportes FILES</label>
+                             <input type="checkbox" id="2-2option3" /><label for="2-2option3">IVA Detalle</label>         
+                             <input type="checkbox" id="2-2option4" /><label for="2-2option4">IVA Total</label>
+                             <input type="checkbox" id="2-2option5" checked /><label for="2-2option5">Pedimento COVE</label>
+                             <input type="checkbox" id="2-2option6" /><label for="2-2option6">Pedimento Detalle</label>
+                         	</div>  
+                          	<div class="col-6">  
+                             <input type="checkbox" id="2-2option18" /><label for="2-2option18">Pedimento General</label>
+                             <input type="checkbox" id="2-2option7" checked /><label for="2-2option7">Pedimentos con Expedientes Completos</label>
+                             <input type="checkbox" id="2-2option8" /><label for="2-2option8">Pedimentos con Expedientes Incompletos</label>
+                             <input type="checkbox" id="2-2option10" checked /><label for="2-2option10">Proveedores con TaxID</label>
+                             <input type="checkbox" id="2-2option11" checked /><label for="2-2option11">Rectificaciones</label>
+                             <input type="checkbox" id="2-2option12" /><label for="2-2option12">Contribuciones</label>
+                         	</div> 
+                          	<div class="col-5">  
+                             <input type="checkbox" id="2-2option13" checked /><label for="2-2option13">DIOT</label>
+                             <input type="checkbox" id="2-2option14" /><label for="2-2option14">Documentos sin RFC de Consulta</label>
+                             <input type="checkbox" id="2-2option19" checked /><label for="2-2option19">Estatus de Expedientes</label>
+                             <input type="checkbox" id="2-2option15" checked /><label for="2-2option15">Listado de Expedientes</label>
+                             <input type="checkbox" id="2-2option16" /><label for="2-2option16">Detalle DataStage</label>
+                             <input type="checkbox" id="2-2option17" /><label for="2-2option17">Resumen de Operaciones DS</label>
+                         	</div>
+                          </div>
+                        </div>
+                        <div class="c-tab">
+                          <div class="c-tab__content checkbox"> 
+                          	<h1>VISTA</h1> 
+                          	<div class="instrucciones">Selecciona tus opciones del listado</div>
+                          	<div class="col-5">                          
+                             <input type="checkbox" id="2-3option1" checked /><label for="2-3option1">Buscar Cove</label>
+                         	</div>  
+                        </div>
+                   		</div>
+                        <div class="c-tab">
+                          <div class="c-tab__content checkbox"> 
+                          	<h1>SEGURIDAD</h1> 
+                          	<div class="instrucciones">Selecciona tus opciones del listado</div>
+                          	<div class="col-5">                          
+                             <input type="checkbox" id="2-4option1" /><label for="2-4option1">Usuarios</label>
+                             <input type="checkbox" id="2-4option2" checked /><label for="2-4option2">Proveedores</label>
+                             <input type="checkbox" id="2-4option3" /><label for="2-4option3">Configuracion de Sellos</label>
+                         	</div>  
+                          	<div class="col-5">                          
+                             <input type="checkbox" id="2-4option4" checked /><label for="2-4option4">Perfiles</label>
+                             <input type="checkbox" id="2-4option5" checked /><label for="2-4option5">Configurador de Notificaciones</label>
+                             <input type="checkbox" id="2-4option6" /><label for="2-4option6">Grupos de Notificaciones</label>
+                         	</div>  
+                        </div>
+                   		</div>
+                        <div class="c-tab">
+                          <div class="c-tab__content checkbox"> 
+                          	<h1>ANEXO 24</h1> 
+                          	<div class="instrucciones">Selecciona tus opciones del listado</div>
+                          	<div class="col-5">                          
+                             <input type="checkbox" id="2-5option1" checked /><label for="2-5option1">Carga de Layout</label>
+                             <input type="checkbox" id="2-5option2" checked /><label for="2-5option2">Generar Compulsas</label>
+                         	</div>  
+                        </div>
+                   		</div>
+                        <div class="c-tab">
+                          <div class="c-tab__content checkbox"> 
+                          	<h1>Descargas directas</h1> 
+                          	<div class="instrucciones">Selecciona tus opciones del listado</div>
+                          	<div class="col-5">                          
+                             <input type="checkbox" id="2-6option1" /><label for="2-6option1">BH</label>
+                             <input type="checkbox" id="2-6option2" checked /><label for="2-6option2">BM</label>
+                             <input type="checkbox" id="2-6option3" /><label for="2-6option3">Pendientes</label>
+                         	</div>  
+                          	<div class="col-5">                          
+                             <input type="checkbox" id="2-6option4" /><label for="2-6option4">Saldados</label>
+                             <input type="checkbox" id="2-6option5" checked /><label for="2-6option5">BH S</label>
+                             <input type="checkbox" id="2-6option6" /><label for="2-6option6">BM S</label>
+                         	</div>  
+                          	<div class="col-5">                          
+                             <input type="checkbox" id="2-6option7" /><label for="2-6option7">Dashboard</label>
+                             <input type="checkbox" id="2-6option8" checked /><label for="2-6option8">Reportes D. Temporalidades</label>
+                             <input type="checkbox" id="2-6option9" /><label for="2-6option9">A1</label>
+                         	</div>  
+                        </div>
+                      	</div>
+                        <div class="c-tab">
+                          <div class="c-tab__content checkbox"> 
+                          	<h1>Files-forwarding</h1> 
+                          	<div class="instrucciones">Selecciona tus opciones del listado</div>
+                          	<div class="col-5">                          
+                             <input type="checkbox" id="2-7option1" /><label for="2-7option1">Lista de Documentos</label>
+                             <input type="checkbox" id="2-7option2" /><label for="2-7option2">Reportes</label>
+                         	</div>  
+                        </div>
+                      	</div>
+                        <div class="c-tab">
+                          <div class="c-tab__content checkbox"> 
+                          	<h1>Documentos</h1> 
+                          	<div class="instrucciones">Selecciona tus opciones del listado</div>
+                          	<div class="col-5">                          
+                             <input type="checkbox" id="2-8option1" /><label for="2-8option1">COVE pdf</label>
+                             <input type="checkbox" id="2-8option2" /><label for="2-8option2">COVE xml</label>
+                             <input type="checkbox" id="2-8option3" /><label for="2-8option3">COVE acuse</label>
+                             <input type="checkbox" id="2-8option4" /><label for="2-8option4">Acuse E-document</label>
+                             <input type="checkbox" id="2-8option5" /><label for="2-8option5">Cuenta de gastos Mex</label>
+                             <input type="checkbox" id="2-8option6" /><label for="2-8option6">Cuenta de gastos Mex (Factura XML)</label>
+                             <input type="checkbox" id="2-8option7" /><label for="2-8option7">Cuenta de gastos USA</label>
+                             <input type="checkbox" id="2-8option8" /><label for="2-8option8">Factura Comercial -PDF</label>
+                             <input type="checkbox" id="2-8option25" /><label for="2-8option25">Contratos de proveedores</label>
+                             <input type="checkbox" id="2-8option26" /><label for="2-8option26">Ordenes de Compra</label>
+                         	</div>  
+                          	<div class="col-5">                          
+                             <input type="checkbox" id="2-8option9" /><label for="2-8option9">Factura Transportista PDF</label>
+                             <input type="checkbox" id="2-8option10" /><label for="2-8option10">Factura Transportista XML</label>
+                             <input type="checkbox" id="2-8option11" /><label for="2-8option11">Carta Porte</label>
+                             <input type="checkbox" id="2-8option12" /><label for="2-8option12">Guía Aerea , BL</label>
+                             <input type="checkbox" id="2-8option13" /><label for="2-8option13">Packing List</label>
+                             <input type="checkbox" id="2-8option14" /><label for="2-8option14">Series Marcas y Modelos</label>
+                             <input type="checkbox" id="2-8option15" /><label for="2-8option15">Certificado de Origen / NAFTA</label>
+                             <input type="checkbox" id="2-8option16" /><label for="2-8option16">RRNA´s,AVISO,CARTAS NOM</label>
+                             <input type="checkbox" id="2-8option27" /><label for="2-8option27">Otros</label>
+                             <input type="checkbox" id="2-8option28" /><label for="2-8option28">Arch. Validacion</label>
+                         	</div> 
+                          	<div class="col-5">                          
+                             <input type="checkbox" id="2-8option17" /><label for="2-8option17">Escritos</label>
+                             <input type="checkbox" id="2-8option18" /><label for="2-8option18">Pagos a Terceros y Comprobados</label>
+                             <input type="checkbox" id="2-8option19" /><label for="2-8option19">Comprobantes de Fletes</label>
+                             <input type="checkbox" id="2-8option20" /><label for="2-8option20">Hoja de Calculo</label>
+                             <input type="checkbox" id="2-8option21" /><label for="2-8option21">Manifestacion de valor</label>
+                             <input type="checkbox" id="2-8option22" /><label for="2-8option22">Pedimento Completo</label>
+                             <input type="checkbox" id="2-8option23" /><label for="2-8option23">Pedimento Simplificado</label>
+                             <input type="checkbox" id="2-8option24" /><label for="2-8option24">Fotos previo</label>
+                             <input type="checkbox" id="2-8option29" /><label for="2-8option29">Pedimento de Origen</label>
+                         	</div>
+                        </div>
+                      	</div>
+
+                    </div>
+
+                  </div>
+                </main>
+	</div>
+
+	<div class="col-16" style="position: fixed;bottom: 0;background-color: #fff;">
+		<button id="guardar-rol" class="btn btn-green">Guardar</button>
+		<button class="btn btn-gray cancelar-rol">Cancelar</button>
+	</div>
+
+</div>
+
+
+<!--********// Overlay mas claro, sale con menu lateral y busqueda -->
+<div id="overlay-trans" class="overlay2"></div>
+
+
+<!--********// Overlay mas obscuro, sle con los popup -->
+<div id="overlay" class="overlay"></div>
+
+	
+<!--********// Popup para agregar documento -->
+	<div id="popup-documento" class="popup">
+		<div class="title bg-gray">Cargar documento <div id="close-documento" class="close"><i class="fa fa-times"></i></div></div>
+		
+		<div class="col-1"></div>
+		<div class="col-14">
+			<select class="js-example-basic-single form-control" style="width: 100%">
+				<option value="1">Tipo de Archivo</option>
+				<option value="2">COVER pdf</option>
+				<option value="3">3</option>
+			</select>
+
+			<div class="caja-cargar text-center">
+				<i class="fa fa-cloud-upload"></i>
+				<p>Arrastra aquí los archivos que desees agregar o da click al botón de agregar.</p>
+				<button class="btn btn-gray-light">Examinar</button>
+			</div>
+		</div>
+		<div class="col-1"></div>
+
+		<div class="col-16 text-center">
+			<button class="btn btn-green">Aceptar</button>
+			<button class="btn btn-gray open-alerta">Cancelar</button>
+		</div>
+	</div>
+
+
+<!--********// Popup para agregar archivos -->
+	<div id="popup-archivo" class="popup">
+		<div class="title bg-gray">Cargar archivo <div id="close-archivo" class="close"><i class="fa fa-times"></i></div></div>
+		
+		<div class="col-1"></div>
+		<div class="col-14">
+
+			<div class="caja-cargar text-center">
+				<i class="fa fa-cloud-upload"></i>
+				<p>Arrastra aquí los archivos que desees agregar o da click al botón de agregar.</p>
+				<button class="btn btn-gray-light">Examinar</button>
+			</div>
+		</div>
+		<div class="col-1"></div>
+
+		<div class="col-16 text-center">
+			<button class="btn btn-green">Aceptar</button>
+			<button class="btn btn-gray open-alerta">Cancelar</button>
+		</div>
+	</div>
+
+
+<!--********// Popup para alertas -->
+	<div id="popup-alerta" class="popup popup-alerta">
+		<div class="title bg-alert">Ocurrió un error <div class="close close-alerta"><i class="fa fa-times"></i></div></div>
+		
+		<div class="col-1"></div>
+		<div class="col-14 text-center">
+
+			<i class="fa fa-exclamation-circle icon"></i>
+			<p id="alert-aviso1"></p>
+			<p id="alert-aviso2" class="text-red"></p>
+			
+		</div>
+		<div class="col-1"></div>
+
+		<div class="col-16 text-center">
+			<button class="btn btn-alert close-alerta">Aceptar</button>
+		</div>
+	</div>
+
+<!--********// Popup para eliminar -->
+	<div id="popup-eliminar" class="popup popup-eliminar">
+		<div class="title bg-orange">Aviso <div class="close close-eliminar bg-orange"><i class="fa fa-times"></i></div></div>
+		
+		<div class="col-1"></div>
+		<div class="col-14 text-center">
+
+			<i class="fa fa-exclamation-circle icon"></i>
+			<p>¿Desea eliminar el archivo?</p>
+			
+		</div>
+		<div class="col-1"></div>
+
+		<div class="col-16 text-center">
+			<button class="btn btn-orange archivo-eliminado">Aceptar</button>
+			<button class="btn btn-gray close-eliminar">Cancelar</button>
+		</div>
+	</div>
+
+<!--********// Popup para confirmación -->
+	<div id="popup-confirmacion" class="popup popup-confirmacion">
+		<div class="title bg-ok">Aviso</div>
+		
+		<div class="col-1"></div>
+		<div class="col-14 text-center">
+
+			<i class="fa fa-check-circle-o icon"></i>
+			<p id="ok-text1" class="text-ok"></p>
+			
+		</div>
+		<div class="col-1"></div>
+
+	</div>
+
+
+
+
+
+<script src="js/jquery.min.js"></script>
+<script src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="js/code.js"></script>
+<script src="js/menu.js"></script>
+
+<script src="js/jquery.tablesorter.min.js"></script>
+
+<script src="js/select2.min.js"></script>
+<script type="text/javascript" src="js/datepicker.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() { 
+	    // call the tablesorter plugin 
+	    $("table").tablesorter({ 
+	        // sort on the first column and third column, order asc 
+	        sortList: [[0,0],[2,0]] 
+	    }); 
+		});
+	</script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('.js-example-basic-single').select2();
+		});
+	</script>
+
+	<script src="js/datepicker.js"></script>
+  <script>
+    $(function() {
+      $('[data-toggle="datepicker"]').datepicker({
+        autoHide: true,
+        zIndex: 2048,
+      });
+    });
+  </script>
+
+
+<script src="js/tabs.js"></script>
+<script>
+    var myTabs = tabs({
+    el: '#tabs',
+    tabNavigationLinks: '.c-tabs-nav__link',
+    tabContentContainers: '.c-tab'
+    });
+
+    myTabs.init();
+</script>
+<script>
+    var myTabs = tabs({
+    el: '#tabs2',
+    tabNavigationLinks: '.c-tabs-nav__link',
+    tabContentContainers: '.c-tab'
+    });
+
+    myTabs.init();
+</script>
+
+</body>
+</html>

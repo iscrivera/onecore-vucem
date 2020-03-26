@@ -9,8 +9,9 @@ namespace Onecore.Vucem.DependencyInjection
     using AutoMapper;
     using Onecore.Vucem.Entities.Context;
     using Onecore.Vucem.Facade.Mapping;
-    using Onecore.Vucem.Facade.Models.User;
-    using Onecore.Vucem.Services.User;
+    using Onecore.Vucem.Facade.Operation;
+    using Onecore.Vucem.Services.Operation;
+    using Onecore.Vucem.DataAccess.DAO.Operation;
     using Microsoft.EntityFrameworkCore;
     using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.DependencyInjection;
@@ -34,9 +35,11 @@ namespace Onecore.Vucem.DependencyInjection
         {
             Services = services;
 
-            Services.AddTransient<IUserFacade, UserFacade>();
+            Services.AddTransient<IVucemOperationFacade, VucemOperationFacade>();
 
-            Services.AddTransient<IUsersService, UsersService>();
+            Services.AddTransient<IVucemSO130120Service, VucemSO130120Service>();
+
+            Services.AddTransient<ISO130120Dao, SO130120Dao>();
 
             Services.AddTransient<IDatabaseContext, DatabaseContext>();
 

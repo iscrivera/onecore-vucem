@@ -1,0 +1,132 @@
+
+.menujq {
+	margin-top: 80px;
+}
+
+.menujq ul {
+list-style: none;
+width: 95%;
+margin: 20px auto;
+padding: 0;
+}
+
+.menujq ul i {
+	font-size: 18px;
+	margin-right: 2px;
+}
+
+.menujq .icon-buscar {
+	top: 17px;right: 8px;position: absolute;cursor: pointer;
+}
+.menujq .tabla-cont {
+	overflow: hidden;
+	position: relative;
+	background-color:#f7f7f7;
+	padding: 0px 5px; 
+	margin-top: 15px;
+	height: 400px;
+}
+.menujq .tabla-cont .tablas {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+}
+
+.menujq a:hover {
+	background-color: #f1f3f4;
+}
+
+.menujq a {
+margin: 10px 0 0;
+display: block;
+padding: 10px;
+color: #8294a2;
+text-decoration: none;
+font-size: 16px;
+line-height: 16px;
+font-weight: 300;
+border: 1px solid #dad9d9;
+background-color: #f7f7f7;
+transition: background-color .5s;
+}
+
+.menujq a .year {
+	font-size: 15px;
+	font-weight: bold;
+	color: #666;
+}
+.menujq a .inf {
+	margin: 0 30px;
+}
+.menujq .meses {
+	margin:0 .4%;
+	padding: 5px 3px;
+	border-radius: 4px;
+	position: relative;
+	cursor: pointer;
+	transition: .3s;
+}
+.menujq .meses:hover {
+	background-color: #ebe9e9;
+}
+.menujq .meses.active {
+	background-color: #ebe9e9;
+}
+.menujq .fa-exclamation-circle {
+	color: #f16657;
+}
+.menujq .fa-check-circle {
+	color: #3bd086;
+}
+.menujq .bar-cont {
+	display: inline-block;width: 100px;height: 15px;background-color: #fff;
+}
+.menujq .progressbar {
+	background-color: #f16657;width: 8.333%;height: 15px;
+}
+
+/* Símbolo elemento normal */
+.menujq ul li a:before {
+font-family: FontAwesome;
+content: "\f078";
+width: 28px;
+float: right;
+vertical-align: top;
+color: #67c8ca;
+}
+/* Símbolo elemento desplegable cerrado */
+.menujq ul li.desplegable a:before {
+content: "\f078";
+}
+/* Símbolo elemento desplegable abierto */
+.menujq ul li.desplegable.activa a:before {
+content: "\f077 ";
+}
+/* Eliminar símbolos para sub-opciones */
+.menujq ul li.desplegable ul li a:before,
+.menujq ul li.desplegable.activa ul li a:before {
+content: "";
+}
+/* Lista anidada inicialmente oculta */
+.menujq ul ul {
+display: none;
+width: 100%;
+padding: 10px 0px;
+background-color: #fff;
+margin-top: 0;
+}
+/* Sangrado y segundo color para sub-opciones */
+.menujq ul ul a {
+/*padding-left: 20px;*/
+text-transform: capitalize;
+}
+
+.menujq ul li.desplegable {
+	margin-left: 0px;
+}
+
+
+.menujq .activa {
+	content: "\f077";
+}

@@ -20,8 +20,8 @@ namespace Onecore.Vucem.Facade.Mapping
         /// </summary>
         public AutoMapperProfile()
         {
-            this.CreateMap<UserModel, UserDto>();
-            this.CreateMap<UserDto, UserModel>();
+            this.CreateMap<SO130120Model, SO130120Dto>();
+            this.CreateMap<SO130120Dto, SO130120Model>();
         }
     }
 }

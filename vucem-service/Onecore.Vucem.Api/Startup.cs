@@ -71,25 +71,25 @@ namespace Onecore.Vucem.Api
             mvcBuilder.AddMvcOptions(p => p.Filters.Add(new ActionFilter(Log.Logger)));
             mvcBuilder.AddMvcOptions(p => p.Filters.Add(new ExceptionFilter(Log.Logger)));
 
-            ////////services.AddSwaggerGen(
-            ////////    c =>
-            ////////    {
-            ////////        c.SwaggerDoc(
-            ////////            "v1",
-            ////////            new OpenApiInfo
-            ////////            {
-            ////////                Version = "v1",
-            ////////                Title = "Api Microservice",
-            ////////                Description = "Arquetipo de servicio Api NetCore",
-            ////////                TermsOfService = new Uri("https://test.com"),
-            ////////                Contact = new OpenApiContact
-            ////////                {
-            ////////                    Name = "Test",
-            ////////                    Email = "test@axity.com",
-            ////////                    Url = new Uri("https://test.com")
-            ////////                }
-            ////////            });
-            ////////    });
+            services.AddSwaggerGen(
+               c =>
+               {
+                   c.SwaggerDoc(
+                       "v1",
+                       new OpenApiInfo
+                       {
+                           Version = "v1",
+                           Title = "Api Microservice",
+                           Description = "Arquetipo de servicio Api NetCore",
+                           TermsOfService = new Uri("https://test.com"),
+                           Contact = new OpenApiContact
+                           {
+                               Name = "Test",
+                               Email = "test@axity.com",
+                               Url = new Uri("https://test.com")
+                           }
+                       });
+               });
         }
 
         /// <summary>

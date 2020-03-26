@@ -8,7 +8,7 @@ namespace Onecore.Vucem.Test
 {
     using System.Collections.Generic;
     using AutoMapper;
-    using Onecore.Vucem.DataAccess.DAO.User;
+    using Onecore.Vucem.DataAccess.DAO.Operation;
     using Onecore.Vucem.Entities.Context;
     using Onecore.Vucem.Entities.Models;
 
@@ -25,7 +25,7 @@ namespace Onecore.Vucem.Test
         /// <summary>
         /// Object usersDao
         /// </summary>
-        public IUsersDao UsersDao;
+        public ISO130120Dao UsersDao;
 
         /// <summary>
         /// Object Context
@@ -36,14 +36,13 @@ namespace Onecore.Vucem.Test
         /// Method Get All Users
         /// </summary>
         /// <returns>List of Users</returns>
-        public IEnumerable<UserModel> GetAllUsers()
+        public IEnumerable<SO130120Model> GetAllUsers()
         {
-            return new List<UserModel>()
+            return new List<SO130120Model>()
             {
-                new UserModel { Id = 1, FirstName = "Alejandro", LastName = "Ojeda", Email = "alejandro.ojeda@axity.com" },
-                new UserModel { Id = 2, FirstName = "Jorge", LastName = "Morales", Email = "jorge.morales@axity.com" },
-                new UserModel { Id = 3, FirstName = "Arturo", LastName = "Miranda", Email = "arturo.miranda@axity.com" },
-                new UserModel { Id = 4, FirstName = "Benjamin", LastName = "Galindo", Email = "benjamin.galindo@axity.com" }
+                new SO130120Model {
+                    Aduana = "321"
+                }
             };
         }
     }

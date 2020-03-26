@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link type="image/x-icon" rel="shortcut icon" href="img/favicon.png">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+	<title>QA Suite</title>
+
+
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/grid.css" rel="stylesheet">
+	<link href="css/select2.min.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet">
+	<link href="css/datepicker.css" rel="stylesheet">
+    <link href="css/menu.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<nav class="navbar">
+	<div class="btn-menu"><i class="fa fa-bars"></i></div>
+	<div class="navbar-header"><img src="img/logo.jpg"></div>
+	<div class="navbar-clientes subcont"> <!--// boton de clientes -->
+		MARY KAY COSMETICS  DE MÉXICO SA DE CV <i class="fa fa-caret-down"></i>
+		<div class="submenu-clientes submenu">
+			<ul>
+			<li><a href="#">MARY KAY COSMETICS  DE MÉXICO SA DE CV</a></li>
+			<li><a href="#">MARY KAY COSMETICS  DE MÉXICO SA DE CV</a></li>
+			<li><a href="#">MARY KAY COSMETICS  DE MÉXICO SA DE CV</a></li>
+			<li><a href="#">MARY KAY COSMETICS  DE MÉXICO SA DE CV</a></li>
+			<li><a href="#">MARY KAY COSMETICS  DE MÉXICO SA DE CV</a></li>
+			<li><a href="#">MARY KAY COSMETICS  DE MÉXICO SA DE CV</a></li>
+			<li><a href="#">MARY KAY COSMETICS  DE MÉXICO SA DE CV</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="navbar-right">
+		<ul class="users-options">
+			<li><a href="#"><i id="buscar" class="fa fa-search"></i></a><!--// boton de buscar -->
+			</li>
+			<li class="subcont"><a href="#"><i class="fa fa-bell"></i></a><!--// boton de notificaciones -->
+			<div class="dropdown submenu">
+				<ul>
+				<li><a href="#">Notificación</a></li>
+				<li><a href="#">Notificación</a></li>
+				<li><a href="#">Notificación</a></li>
+				<li><a href="#">Notificación</a></li>
+				<li><a href="#">Notificación</a></li>
+				</ul>			
+			</div>
+			</li>
+			<li class="subcont"><a href="#"><i class="fa fa-user-circle-o"></i> Juan Perez</a><!--// boton de usuario -->
+			<div class="dropdown submenu">
+				<ul>
+				<li><a href="#"><i class="fa fa-cog" aria-hidden="true"></i> Cuenta</a></li>
+				<li><a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i> Cerrar sesión</a></li>
+				</ul>
+			</div>
+			</li>
+		</ul>
+	</div>
+	
+</nav>
+
+
+<!--********// Caja de busqueda -->
+
+<div id="buscar-box" class="busqueda">
+	<div class="col-13 no-padding" style="width: 80%">
+		<input type="text" name="" class="form-control" placeholder="Buscar...">
+	</div>
+	<div class="col-3 no-padding text-center" style="width: 20%"><button class="btn btn-green"><i class="fa fa-search"></i></button></div>			
+</div>
+
+
+<!--********// Menu normal -->
+
+<div class="navbar-menu">
+		<div class="btn-menu-cerrar"><i class="fa fa-times"></i></div>
+		<div class="navbar-menu-logo"><img src="img/logo.jpg"></div>
+		<div class='cssmenu'>
+			<div id="oculta-menu" class="btn-ocultarmenu"><i class="fa fa-bars"></i></div>
+			<ul>
+				<li class='has-sub open'>
+					<a href="#"><div class="icono"><img src="img/icon-menu.png"></div> SAFE</a>
+					<ul style="display: block;">
+						<li>
+						    <a href='safe-dashboard.html'><i class="fa fa-angle-right text-red"></i> Dashboard</a>
+						</li>
+						<li>
+						    <a href='safe-auditoria.html'><i class="fa fa-angle-right text-red"></i> Auditoria</a>
+						</li>
+						<li>
+						    <a href='safe-carga.html' class="active"w><i class="fa fa-angle-right text-red"></i> Carga de DataStage</a>
+						</li>
+						<li class='has-sub'>
+						    <a href='#'><i class="fa fa-angle-right text-red"></i> Reportes Safe</a>
+						    <ul>
+						        <li><a href='safe-historico.html'><i class="fa fa-angle-right text-red"></i> Histórico de PreAuditorias</a></li>
+						    </ul>
+						</li>
+					</ul>
+				</li>
+				<li class='has-sub'>
+					<a href="#"><div class="icono"><img src="img/icon-menu-files.png"></div> FILES</a>
+					<ul>
+						<li>
+						    <a href='files-dashboard.html'><i class="fa fa-angle-right text-purple"></i> Dashboard</a>
+						</li>
+						<li>
+						    <a href='files-expedientes.html'><i class="fa fa-angle-right text-purple"></i> Listados de Expedientes</a>
+						</li>
+						<li class='has-sub'>
+						    <a href='#'><i class="fa fa-angle-right text-purple"></i> Reportes Files</a>
+						    <ul>
+								<li><a href='files-reportes.html'><i class="fa fa-angle-right text-purple"></i> Estatus de expedientes</a></li>
+								<li><a href='files-iva.html'><i class="fa fa-angle-right text-purple"></i> IVA detalle</a></li>
+						    </ul>
+						</li>
+					</ul>
+				</li>
+				<li class='has-sub'>
+					<a href="#"><div class="icono"><img src="img/icon-menu-vista.png"></div> VISTA</a>
+					<ul>
+						<li>
+						    <div class="buscar-cont"><input type="text" name="" class="form-control" placeholder="Buscar..."><i class="fa fa-search btn-buscar"></i></div>
+						</li>
+					</ul>
+				</li>
+				<li class='has-sub'>
+					<a href="#"><div class="icono"><img src="img/icon-menu-anexo.png"></div> ANEXO 24</a>
+					<ul>
+						<li><a href='anexo-carga.html'><i class="fa fa-angle-right text-yellow"></i> Carga de layout</a></li>
+						<li><a href='anexo-compulsas.html'><i class="fa fa-angle-right text-yellow"></i> Generar compulsas</a></li>
+					</ul>
+				</li>
+				<li class='has-sub'>
+					<a href="#"><div class="icono"><img src="img/icon-menu-seguridad.png"></div> SEGURIDAD</a>
+					<ul>
+						<li>
+						    <a href='seguridad-perfiles.html'><i class="fa fa-angle-right text-green"></i> Perfiles</a>
+						</li>
+						<li>
+						    <a href='seguridad-proveedores.html'><i class="fa fa-angle-right text-green"></i> Poveedores</a>
+						</li>
+						<li>
+						    <a href='seguridad-usuarios.html'><i class="fa fa-angle-right text-green"></i> Usuarios</a>
+						</li>
+						<li>
+						    <a href='seguridad-sellos.html'><i class="fa fa-angle-right text-green"></i> Configuración de Sellos</a>
+						</li>
+						<li>
+						    <a href='seguridad-grupos.html'><i class="fa fa-angle-right text-green"></i> Grupos de Notificaciones</a>
+						</li>
+						<li>
+						    <a href='seguridad-configuracion.html'><i class="fa fa-angle-right text-green"></i> Configurador de Notificaciones</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+
+</div>
+
+<!-- // fin de menu  -->
+
+<!--********// Menu replegado -->
+
+<div class="navbar-menu-replegado">
+
+	<div class="navbar-menu-logo"><img src="img/logo.jpg"></div>
+	<div class='cssmenu'>
+		<div id="muestra-menu" class="btn-ocultarmenu"><i class="fa fa-bars"></i></div>
+		<ul>
+			<li class="open subcont">
+				<a href="#"><div class="icono"><img src="img/icon-menu.png"></div></a>	
+				<div class="submenu-menu submenu">
+					<div class="title bg-red">SAFE</div>
+					<div class='cssmenu'>
+					<ul class="sub" style="display: block;">
+						<li>
+							<a href='safe-dashboard.html'><i class="fa fa-angle-right text-red"></i> Dashboard</a>
+						</li>
+						<li>
+							<a href='safe-auditoria.html'><i class="fa fa-angle-right text-red"></i> Auditoria</a>
+						</li>
+						<li>
+							<a href='safe-carga.html' class="active"><i class="fa fa-angle-right text-red"></i> Carga de DataStage</a>
+						</li>
+						<li class='has-sub'>
+							<a href='#'><i class="fa fa-angle-right text-red"></i> Reportes Safe</a>
+							<ul>
+								<li><a href='safe-historico.html'><i class="fa fa-angle-right text-red"></i> Histórico de PreAuditorias</a></li>
+							</ul>
+						</li>
+					</ul>
+					</div>
+				</div>			
+			</li>
+			<li class='subcont'>
+				<a href="#"><div class="icono"><img src="img/icon-menu-files.png"></div></a>	
+
+				<div class="submenu-menu submenu">
+					<div class="title bg-purple">FILES</div>
+					<div class='cssmenu'>
+					<ul class="sub" style="display: block;">
+						<li>
+							<a href='files-dashboard.html'><i class="fa fa-angle-right text-purple"></i> Dashboard</a>
+						</li>
+						<li>
+							<a href='files-expedientes.html'><i class="fa fa-angle-right text-purple"></i> Listados de Expedientes</a>
+						</li>
+						<li class='has-sub'>
+							<a href='#'><i class="fa fa-angle-right text-purple"></i> Reportes Files</a>
+							<ul>
+								<li><a href='files-reportes.html'><i class="fa fa-angle-right text-purple"></i> Estatus de expedientes</a></li>
+								<li><a href='files-iva.html'><i class="fa fa-angle-right text-purple"></i> IVA detalle</a></li>
+							</ul>
+						</li>
+					</ul>
+					</div>
+				</div>				
+			</li>
+			<li class="subcont">
+				<a href="#"><div class="icono"><img src="img/icon-menu-vista.png"></div></a>
+
+				<div class="submenu-menu submenu">
+					<div class="title bg-blue">VISTA</div>
+					<div class='cssmenu'>
+					<ul class="sub" style="display: block;">
+						<li>
+							<div class="buscar-cont"><input type="text" name="" class="form-control" placeholder="Buscar..."><i class="fa fa-search btn-buscar"></i></div>
+						</li>
+					</ul>
+					</div>
+				</div>					
+			</li>
+			<li class="subcont">
+				<a href="#"><div class="icono"><img src="img/icon-menu-anexo.png"></div></a>	
+				<div class="submenu-menu submenu">
+					<div class="title bg-yellow">ANEXO 24</div>
+					<div class='cssmenu'>
+					<ul class="sub" style="display: block;">
+						<li><a href='anexo-carga.html'><i class="fa fa-angle-right text-yellow"></i> Carga de layout</a></li>
+						<li><a href='anexo-compulsas.html'><i class="fa fa-angle-right text-yellow"></i> Generar compulsas</a></li>
+					</ul>
+					</div>
+				</div>				
+			</li>
+			<li class="subcont">
+				<a href="#"><div class="icono"><img src="img/icon-menu-seguridad.png"></div></a>	
+				<div class="submenu-menu submenu">
+					<div class="title bg-green">SEGURIDAD</div>
+					<div class='cssmenu'>
+					<ul class="sub" style="display: block;">
+						<li>
+							<a href='seguridad-perfiles.html'><i class="fa fa-angle-right text-green"></i> Perfiles</a>
+						</li>
+						<li>
+							<a href='seguridad-proveedores.html'><i class="fa fa-angle-right text-green"></i> Poveedores</a>
+						</li>
+						<li>
+							<a href='seguridad-usuarios.html'><i class="fa fa-angle-right text-green"></i> Usuarios</a>
+						</li>
+						<li>
+							<a href='seguridad-sellos.html'><i class="fa fa-angle-right text-green"></i> Configuración de Sellos</a>
+						</li>
+						<li>
+							<a href='seguridad-grupos.html'><i class="fa fa-angle-right text-green"></i> Grupos de Notificaciones</a>
+						</li>
+						<li>
+							<a href='seguridad-configuracion.html'><i class="fa fa-angle-right text-green"></i> Configurador de Notificaciones</a>
+						</li>
+					</ul>
+					</div>
+				</div>				
+			</li>
+		</ul>
+	</div>
+
+
+</div>
+
+<!-- // fin de menu replegado -->
+
+<div class="wrapper">
+	
+	<div class="row">
+		<div class="col-16 wrapper-head" style="padding-bottom: 0;">
+			<h1><img src="img/icon-head-safe.png"> SAFE <span class="text-red">/ Seleccionar DataStage none</span></h1>
+
+			<div class="col-16" style="padding-bottom: 0;">
+
+					<div class="col-5">
+						<div class="tag-text">RFC DataSatge</div>
+						<input type="text" class="form-control" placeholder="">
+					</div>
+					<div class="col-2 text-center" style="padding-top: 36px;">
+						<button class="btn btn-gray" style="width: 80%;">Examinar</button>
+					</div>
+					<div class="col-3 text-center" style="padding-top: 36px;">
+						<button class="btn btn-green open-progressbar">Cargar archivos</button>
+					</div>
+				
+			</div>
+
+		</div>
+	</div>
+
+
+<!--********// boton que oculta head -->
+	<div id="ocultahead" class="btn-ocultarhead boxtool"><i class="fa fa-chevron-up"></i><div class="tooltip">Ocultar header</div></div>
+
+		<div class="table-responsive">
+	        <table class="tablesorter table table-striped table-bordered table-hover" cellspacing="0">
+	            <thead>
+	                <tr>
+	                    <th>Archivos</th>
+	                </tr>
+	            </thead>
+	            <tbody id="numbers">
+	                <tr>
+	                    <td>
+	                    	<span class="tag-archivos">Nombre_del_Archivo_12.pdf<i class="fa fa-times cerrar quitar-doc"></i></span>
+	                    	<span class="tag-archivos">Nombre_del_Archivo_56.pdf<i class="fa fa-times cerrar quitar-doc"></i></span>
+	                    	<span class="tag-archivos">Nombre_del_Archivo_56_dfg.pdf<i class="fa fa-times cerrar quitar-doc"></i></span>
+	                    	<span class="tag-archivos">Nombre_del_Archivo_12.pdf<i class="fa fa-times cerrar quitar-doc"></i></span>
+	                    	<span class="tag-archivos">Nombre_del_Archivo_56.pdf<i class="fa fa-times cerrar quitar-doc"></i></span>
+	                    	<span class="tag-archivos">Nombre_del_Archivo_56_dfg.pdf<i class="fa fa-times cerrar quitar-doc"></i></span>
+	                    </td>
+	                </tr>
+	            </tbody>
+	        </table>
+	    </div> 
+
+
+</div>
+
+</div>
+
+
+<!--********// Overlay mas claro, sale con menu lateral y busqueda -->
+<div id="overlay-trans" class="overlay2"></div>
+
+
+<!--********// Overlay mas obscuro, sle con los popup -->
+<div id="overlay" class="overlay"></div>
+
+	
+<!--********// Popup para agregar documento -->
+	<div id="popup-documento" class="popup">
+		<div class="title bg-gray">Cargar documento <div id="close-documento" class="close"><i class="fa fa-times"></i></div></div>
+		
+		<div class="col-1"></div>
+		<div class="col-14">
+			<select class="js-example-basic-single form-control" style="width: 100%">
+				<option value="1">Tipo de Archivo</option>
+				<option value="2">COVER pdf</option>
+				<option value="3">3</option>
+			</select>
+
+			<div class="caja-cargar text-center">
+				<i class="fa fa-cloud-upload"></i>
+				<p>Arrastra aquí los archivos que desees agregar o da click al botón de agregar.</p>
+				<button class="btn btn-gray-light">Examinar</button>
+			</div>
+		</div>
+		<div class="col-1"></div>
+
+		<div class="col-16 text-center">
+			<button class="btn btn-green open-progressbar">Aceptar</button>
+			<button class="btn btn-gray open-alerta">Cancelar</button>
+		</div>
+	</div>
+
+
+<!--********// Popup para agregar archivos -->
+	<div id="popup-archivo" class="popup">
+		<div class="title bg-gray">Cargar archivo <div id="close-archivo" class="close"><i class="fa fa-times"></i></div></div>
+		
+		<div class="col-1"></div>
+		<div class="col-14">
+
+			<div class="caja-cargar text-center">
+				<i class="fa fa-cloud-upload"></i>
+				<p>Arrastra aquí los archivos que desees agregar o da click al botón de agregar.</p>
+				<button class="btn btn-gray-light">Examinar</button>
+			</div>
+		</div>
+		<div class="col-1"></div>
+
+		<div class="col-16 text-center">
+			<button class="btn btn-green open-progressbar">Aceptar</button>
+			<button class="btn btn-gray open-alerta">Cancelar</button>
+		</div>
+	</div>
+
+
+<!--********// Popup para alertas -->
+	<div id="popup-alerta" class="popup popup-alerta">
+		<div class="title bg-alert">Ocurrió un error <div class="close close-alerta"><i class="fa fa-times"></i></div></div>
+		
+		<div class="col-1"></div>
+		<div class="col-14 text-center">
+
+			<i class="fa fa-exclamation-circle icon"></i>
+			<p id="alert-aviso1"></p>
+			<p id="alert-aviso2" class="text-red"></p>
+			
+		</div>
+		<div class="col-1"></div>
+
+		<div class="col-16 text-center">
+			<button class="btn btn-alert close-alerta">Aceptar</button>
+		</div>
+	</div>
+
+
+<!--********// Popup para ver progreso de carga -->
+	<div id="popup-progreso" class="popup text-center">
+		<div id="title-progress" class="title bg-gray">Cargando... </div>
+		
+		<div class="myProgress">
+		  <div id="myBar" class="myBar">
+		    <div id="porcent" class="label">10%</div>
+		  </div>
+		</div>
+
+	</div>
+
+<!--********// Popup para confirmación -->
+	<div id="popup-confirmacion" class="popup popup-confirmacion">
+		<div class="title bg-ok">Aviso</div>
+		
+		<div class="col-1"></div>
+		<div class="col-14 text-center">
+
+			<i class="fa fa-check-circle-o icon"></i>
+			<p id="ok-text1" class="text-ok"></p>
+			
+		</div>
+		<div class="col-1"></div>
+
+	</div>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="js/code.js"></script>
+<script src="js/menu.js"></script>
+
+<script src="js/jquery.tablesorter.min.js"></script>
+
+<script src="js/select2.min.js"></script>
+<script type="text/javascript" src="js/datepicker.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() { 
+	    // call the tablesorter plugin 
+	    $("table").tablesorter({ 
+	        // sort on the first column and third column, order asc 
+	        sortList: [[0,0],[2,0]] 
+	    }); 
+		});
+	</script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('.js-example-basic-single').select2();
+		});
+	</script>
+
+	<script src="js/datepicker.js"></script>
+  <script>
+    $(function() {
+      $('[data-toggle="datepicker"]').datepicker({
+        autoHide: true,
+        zIndex: 2048,
+      });
+    });
+  </script>
+
+</body>
+</html>

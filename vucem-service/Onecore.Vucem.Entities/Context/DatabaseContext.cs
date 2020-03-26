@@ -25,6 +25,6 @@ namespace Onecore.Vucem.Entities.Context
         /// <summary>
         /// Gets or sets CatUser
         /// </summary>
-        public virtual DbSet<UserModel> CatUser { get; set; }
+        public virtual DbSet<SO130120Model> CatSO130120 { get; set; }
     }
 }
